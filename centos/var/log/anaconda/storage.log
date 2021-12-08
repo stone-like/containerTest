@@ -1,0 +1,764 @@
+17:12:51,368 INF blivet: ISCSID is /sbin/iscsid
+17:12:51,368 INF blivet: no initiator set
+17:12:51,449 INF blivet: No FCoE EDD info found: No FCoE boot disk information is found in EDD!
+17:12:54,036 DBG blivet:               Ext4FS.supported: supported: True ;
+17:12:54,036 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 0
+17:12:54,037 DBG blivet:            Ext4FS.supported: supported: True ;
+17:12:54,037 DBG blivet: trying to set new default fstype to 'ext4'
+17:12:54,039 DBG blivet:                  Ext4FS.supported: supported: True ;
+17:12:54,039 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 1
+17:12:54,040 DBG blivet:               Ext4FS.supported: supported: True ;
+17:12:54,053 DBG blivet: trying to set new default fstype to 'ext4'
+17:12:54,054 DBG blivet:               Ext4FS.supported: supported: True ;
+17:12:54,054 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 2
+17:12:54,055 DBG blivet:            Ext4FS.supported: supported: True ;
+17:12:54,056 DBG blivet:               Ext4FS.supported: supported: True ;
+17:12:54,057 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 3
+17:12:54,058 DBG blivet:            Ext4FS.supported: supported: True ;
+17:12:54,840 INF blivet: no initiator set
+17:12:54,840 INF blivet: resetting Blivet (version 3.1.0) instance <pyanaconda.storage.osinstall.InstallerStorage object at 0x7f9bcf34c240>
+17:12:54,841 INF blivet: DeviceTree.populate: ignored_disks is [] ; exclusive_disks is []
+17:12:54,841 WRN blivet: Failed to call the update_volume_info method: libstoragemgmt functionality not available
+17:12:55,294 INF blivet: devices to scan: ['vda', 'loop0', 'loop1', 'loop2', 'live-rw', 'live-base']
+17:12:55,303 DBG blivet:                DeviceTree.handle_device: name: vda ; info: {'DEVLINKS': '/dev/disk/by-path/virtio-pci-0000:00:04.0 '
+             '/dev/disk/by-path/pci-0000:00:04.0',
+ 'DEVNAME': '/dev/vda',
+ 'DEVPATH': '/devices/pci0000:00/0000:00:04.0/virtio1/block/vda',
+ 'DEVTYPE': 'disk',
+ 'ID_PATH': 'pci-0000:00:04.0',
+ 'ID_PATH_TAG': 'pci-0000_00_04_0',
+ 'MAJOR': '252',
+ 'MINOR': '0',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'vda',
+ 'SYS_PATH': '/sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '20059144'} ;
+17:12:55,303 INF blivet: scanning vda (/sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda)...
+17:12:55,320 DBG blivet:                  DeviceTree.get_device_by_name: name: vda ; incomplete: False ; hidden: False ;
+17:12:55,328 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:55,335 DBG blivet:                 DiskDevicePopulator.run: name: vda ;
+17:12:55,336 WRN blivet: device/model is not a valid attribute
+17:12:55,336 INF blivet: vda is a disk
+17:12:55,337 DBG blivet: get_format('None') returning DeviceFormat instance with object id 5
+17:12:55,337 DBG blivet: get_format('None') returning DeviceFormat instance with object id 6
+17:12:55,339 DBG blivet:                         DiskDevice._set_format: vda ; type: None ; current: None ;
+17:12:55,341 DBG blivet:                       DiskDevice.update_sysfs_path: vda ; status: True ;
+17:12:55,342 DBG blivet: vda sysfs_path set to /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda
+17:12:55,347 DBG blivet:                           DiskDevice.read_current_size: exists: True ; path: /dev/vda ; sysfs_path: /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda ;
+17:12:55,352 DBG blivet: updated vda size to 10 GiB (10 GiB)
+17:12:55,353 INF blivet: added disk vda (id 4) to device tree
+17:12:55,354 INF blivet: got device: DiskDevice instance (0x7f9bbb80cb70) --
+  name = vda  status = True  id = 4
+  children = []
+  parents = []
+  uuid = None  size = 10 GiB
+  format = existing None
+  major = 252  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda
+  target size = 10 GiB  path = /dev/vda
+  format args = []  original_format = None  removable = False  wwn = None
+17:12:55,370 DBG blivet:                  DeviceTree.handle_format: name: vda ;
+17:12:55,370 DBG blivet: no type or existing type for vda, bailing
+17:12:55,372 DBG blivet:                DeviceTree.handle_device: name: loop0 ; info: {'DEVNAME': '/dev/loop0',
+ 'DEVPATH': '/devices/virtual/block/loop0',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_TYPE': 'squashfs',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_VERSION': '4.0',
+ 'MAJOR': '7',
+ 'MINOR': '0',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop0',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop0',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '20093672'} ;
+17:12:55,372 INF blivet: scanning loop0 (/sys/devices/virtual/block/loop0)...
+17:12:55,391 DBG blivet:                  DeviceTree.get_device_by_name: name: loop0 ; incomplete: False ; hidden: False ;
+17:12:55,404 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:55,411 DBG blivet:                 LoopDevicePopulator.run: name: loop0 ;
+17:12:55,419 DBG blivet:                   DeviceTree.get_device_by_name: name: /tmp/curl_fetch_url1/install.img (deleted) ; incomplete: False ; hidden: False ;
+17:12:55,425 DBG blivet:                   DeviceTree.get_device_by_name returned None
+17:12:55,425 DBG blivet: get_format('None') returning DeviceFormat instance with object id 10
+17:12:55,426 DBG blivet: get_format('None') returning DeviceFormat instance with object id 11
+17:12:55,443 DBG blivet:                         FileDevice._set_format: /tmp/curl_fetch_url1/install.img (deleted) ; type: None ; current: None ;
+17:12:55,448 DBG blivet:                       FileDevice.update_sysfs_path: /tmp/curl_fetch_url1/install.img (deleted) ; status: False ;
+17:12:55,448 ERR blivet: failed to update sysfs path for /tmp/curl_fetch_url1/install.img (deleted): [Errno 2] No such file or directory: '/tmp/curl_fetch_url1/install.img (deleted)'
+17:12:55,449 INF blivet: added file /tmp/curl_fetch_url1/install.img (deleted) (id 9) to device tree
+17:12:55,449 DBG blivet: get_format('None') returning DeviceFormat instance with object id 14
+17:12:55,459 DBG blivet:                              FileDevice.add_child: name: /tmp/curl_fetch_url1/install.img (deleted) ; child: loop0 ; kids: 0 ;
+17:12:55,459 DBG blivet: get_format('None') returning DeviceFormat instance with object id 15
+17:12:55,463 DBG blivet:                         LoopDevice._set_format: loop0 ; type: None ; current: None ;
+17:12:55,467 DBG blivet:                       LoopDevice.update_sysfs_path: loop0 ; status: True ;
+17:12:55,468 DBG blivet: loop0 sysfs_path set to /sys/devices/virtual/block/loop0
+17:12:55,468 INF blivet: added loop loop0 (id 13) to device tree
+17:12:55,468 INF blivet: got device: LoopDevice instance (0x7f9bb7c63470) --
+  name = loop0  status = False  id = 13
+  children = []
+  parents = ['existing 0 B file /tmp/curl_fetch_url1/install.img (deleted) (9)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/virtual/block/loop0
+  target size = 0 B  path = /dev/loop0
+  format args = []  original_format = None
+17:12:55,471 DBG blivet:                  DeviceTree.handle_format: name: loop0 ;
+17:12:55,474 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+17:12:55,474 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 17
+17:12:55,477 DBG blivet:                              EFIFS.supported: supported: True ;
+17:12:55,478 DBG blivet: get_format('efi') returning EFIFS instance with object id 18
+17:12:55,479 DBG blivet:                                MacEFIFS.supported: supported: True ;
+17:12:55,480 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 19
+17:12:55,482 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+17:12:55,482 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 20
+17:12:55,483 INF blivet: type detected on 'loop0' is 'squashfs'
+17:12:55,483 DBG blivet: get_format('squashfs') returning DeviceFormat instance with object id 21
+17:12:55,484 DBG blivet:                       LoopDevice._set_format: loop0 ; type: None ; current: None ;
+17:12:55,485 INF blivet: got format: existing None
+17:12:55,486 DBG blivet:                DeviceTree.handle_device: name: loop1 ; info: {'DEVLINKS': '/dev/disk/by-label/Anaconda '
+             '/dev/disk/by-uuid/f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'DEVNAME': '/dev/loop1',
+ 'DEVPATH': '/devices/virtual/block/loop1',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_UUID_ENC': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '7',
+ 'MINOR': '1',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop1',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop1',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '20098937'} ;
+17:12:55,487 INF blivet: scanning loop1 (/sys/devices/virtual/block/loop1)...
+17:12:55,488 DBG blivet:                  DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+17:12:55,489 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:55,490 DBG blivet:                 LoopDevicePopulator.run: name: loop1 ;
+17:12:55,491 DBG blivet:                   DeviceTree.get_device_by_name: name: /LiveOS/rootfs.img ; incomplete: False ; hidden: False ;
+17:12:55,492 DBG blivet:                   DeviceTree.get_device_by_name returned None
+17:12:55,492 DBG blivet: get_format('None') returning DeviceFormat instance with object id 24
+17:12:55,492 DBG blivet: get_format('None') returning DeviceFormat instance with object id 25
+17:12:55,494 DBG blivet:                         FileDevice._set_format: /LiveOS/rootfs.img ; type: None ; current: None ;
+17:12:55,496 DBG blivet:                       FileDevice.update_sysfs_path: /LiveOS/rootfs.img ; status: False ;
+17:12:55,496 ERR blivet: failed to update sysfs path for /LiveOS/rootfs.img: [Errno 2] No such file or directory: '/LiveOS/rootfs.img'
+17:12:55,496 INF blivet: added file /LiveOS/rootfs.img (id 23) to device tree
+17:12:55,496 DBG blivet: get_format('None') returning DeviceFormat instance with object id 28
+17:12:55,498 DBG blivet:                              FileDevice.add_child: name: /LiveOS/rootfs.img ; child: loop1 ; kids: 0 ;
+17:12:55,498 DBG blivet: get_format('None') returning DeviceFormat instance with object id 29
+17:12:55,499 DBG blivet:                         LoopDevice._set_format: loop1 ; type: None ; current: None ;
+17:12:55,501 DBG blivet:                       LoopDevice.update_sysfs_path: loop1 ; status: True ;
+17:12:55,501 DBG blivet: loop1 sysfs_path set to /sys/devices/virtual/block/loop1
+17:12:55,502 INF blivet: added loop loop1 (id 27) to device tree
+17:12:55,502 INF blivet: got device: LoopDevice instance (0x7f9bb4741be0) --
+  name = loop1  status = False  id = 27
+  children = []
+  parents = ['existing 0 B file /LiveOS/rootfs.img (23)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/virtual/block/loop1
+  target size = 0 B  path = /dev/loop1
+  format args = []  original_format = None
+17:12:55,504 DBG blivet:                  DeviceTree.handle_format: name: loop1 ;
+17:12:55,506 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+17:12:55,506 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 31
+17:12:55,508 DBG blivet:                              EFIFS.supported: supported: True ;
+17:12:55,508 DBG blivet: get_format('efi') returning EFIFS instance with object id 32
+17:12:55,510 DBG blivet:                                MacEFIFS.supported: supported: True ;
+17:12:55,510 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 33
+17:12:55,514 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+17:12:55,514 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 34
+17:12:55,514 INF blivet: type detected on 'loop1' is 'ext4'
+17:12:55,559 WRN blivet: Failed to obtain minimum size for device /dev/loop1: failed to gather info from resize program: 1
+17:12:55,561 DBG blivet:                        Ext4FS.supported: supported: True ;
+17:12:55,562 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 35
+17:12:55,565 DBG blivet:                       LoopDevice._set_format: loop1 ; type: ext4 ; current: None ;
+17:12:55,566 INF blivet: got format: existing ext4 filesystem
+17:12:55,619 DBG blivet:                               Ext4FS.supported: supported: True ;
+17:12:55,645 DBG blivet:                                  Ext4FS.supported: supported: True ;
+17:12:55,648 DBG blivet:                DeviceTree.handle_device: name: loop2 ; info: {'DEVNAME': '/dev/loop2',
+ 'DEVPATH': '/devices/virtual/block/loop2',
+ 'DEVTYPE': 'disk',
+ 'ID_FS_TYPE': 'DM_snapshot_cow',
+ 'ID_FS_USAGE': 'other',
+ 'MAJOR': '7',
+ 'MINOR': '2',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'loop2',
+ 'SYS_PATH': '/sys/devices/virtual/block/loop2',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '20094165'} ;
+17:12:55,648 INF blivet: scanning loop2 (/sys/devices/virtual/block/loop2)...
+17:12:55,649 DBG blivet:                  DeviceTree.get_device_by_name: name: loop2 ; incomplete: False ; hidden: False ;
+17:12:55,650 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:55,651 DBG blivet:                 LoopDevicePopulator.run: name: loop2 ;
+17:12:55,653 DBG blivet:                   DeviceTree.get_device_by_name: name: /overlay (deleted) ; incomplete: False ; hidden: False ;
+17:12:55,654 DBG blivet:                   DeviceTree.get_device_by_name returned None
+17:12:55,654 DBG blivet: get_format('None') returning DeviceFormat instance with object id 38
+17:12:55,655 DBG blivet: get_format('None') returning DeviceFormat instance with object id 39
+17:12:55,656 DBG blivet:                         FileDevice._set_format: /overlay (deleted) ; type: None ; current: None ;
+17:12:55,658 DBG blivet:                       FileDevice.update_sysfs_path: /overlay (deleted) ; status: False ;
+17:12:55,658 ERR blivet: failed to update sysfs path for /overlay (deleted): [Errno 2] No such file or directory: '/overlay (deleted)'
+17:12:55,659 INF blivet: added file /overlay (deleted) (id 37) to device tree
+17:12:55,659 DBG blivet: get_format('None') returning DeviceFormat instance with object id 42
+17:12:55,661 DBG blivet:                              FileDevice.add_child: name: /overlay (deleted) ; child: loop2 ; kids: 0 ;
+17:12:55,661 DBG blivet: get_format('None') returning DeviceFormat instance with object id 43
+17:12:55,663 DBG blivet:                         LoopDevice._set_format: loop2 ; type: None ; current: None ;
+17:12:55,664 DBG blivet:                       LoopDevice.update_sysfs_path: loop2 ; status: True ;
+17:12:55,665 DBG blivet: loop2 sysfs_path set to /sys/devices/virtual/block/loop2
+17:12:55,665 INF blivet: added loop loop2 (id 41) to device tree
+17:12:55,665 INF blivet: got device: LoopDevice instance (0x7f9bd6c7f8d0) --
+  name = loop2  status = False  id = 41
+  children = []
+  parents = ['existing 0 B file /overlay (deleted) (37)']
+  uuid = None  size = 0 B
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = False
+  sysfs path = /sys/devices/virtual/block/loop2
+  target size = 0 B  path = /dev/loop2
+  format args = []  original_format = None
+17:12:55,668 DBG blivet:                  DeviceTree.handle_format: name: loop2 ;
+17:12:55,670 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+17:12:55,670 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 45
+17:12:55,672 DBG blivet:                              EFIFS.supported: supported: True ;
+17:12:55,672 DBG blivet: get_format('efi') returning EFIFS instance with object id 46
+17:12:55,674 DBG blivet:                                MacEFIFS.supported: supported: True ;
+17:12:55,674 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 47
+17:12:55,676 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+17:12:55,676 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 48
+17:12:55,676 INF blivet: type detected on 'loop2' is 'DM_snapshot_cow'
+17:12:55,677 DBG blivet: get_format('DM_snapshot_cow') returning DeviceFormat instance with object id 49
+17:12:55,678 DBG blivet:                       LoopDevice._set_format: loop2 ; type: None ; current: None ;
+17:12:55,679 INF blivet: got format: existing None
+17:12:55,680 DBG blivet:                DeviceTree.handle_device: name: live-rw ; info: {'DEVLINKS': '/dev/disk/by-label/Anaconda /dev/mapper/live-rw '
+             '/dev/disk/by-id/dm-name-live-rw '
+             '/dev/disk/by-uuid/f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'DEVNAME': '/dev/dm-0',
+ 'DEVPATH': '/devices/virtual/block/dm-0',
+ 'DEVTYPE': 'disk',
+ 'DM_NAME': 'live-rw',
+ 'DM_SUSPENDED': '0',
+ 'DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG': '1',
+ 'DM_UDEV_PRIMARY_SOURCE_FLAG': '1',
+ 'DM_UDEV_RULES_VSN': '2',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_UUID_ENC': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '253',
+ 'MINOR': '0',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'dm-0',
+ 'SYS_PATH': '/sys/devices/virtual/block/dm-0',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '16366842'} ;
+17:12:55,680 INF blivet: scanning live-rw (/sys/devices/virtual/block/dm-0)...
+17:12:55,682 DBG blivet:                  DeviceTree.get_device_by_name: name: live-rw ; incomplete: False ; hidden: False ;
+17:12:55,683 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:56,060 DBG blivet:                 DMDevicePopulator.run: name: live-rw ;
+17:12:56,063 DBG blivet:                     DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+17:12:56,064 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop1 (27) with existing ext4 filesystem
+17:12:56,068 DBG blivet:                     DeviceTree.get_device_by_name: name: loop2 ; incomplete: False ; hidden: False ;
+17:12:56,069 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop2 (41)
+17:12:56,071 DBG blivet:                   DeviceTree.get_device_by_name: name: live-rw ; incomplete: False ; hidden: False ;
+17:12:56,072 DBG blivet:                   DeviceTree.get_device_by_name returned None
+17:12:56,072 DBG blivet: get_format('None') returning DeviceFormat instance with object id 52
+17:12:56,075 DBG blivet:                              LoopDevice.add_child: name: loop1 ; child: live-rw ; kids: 0 ;
+17:12:56,075 DBG blivet: get_format('None') returning DeviceFormat instance with object id 53
+17:12:56,076 DBG blivet:                         DMDevice._set_format: live-rw ; type: None ; current: None ;
+17:12:56,079 DBG blivet:                       DMDevice.update_sysfs_path: live-rw ; status: True ;
+17:12:56,079 DBG blivet: live-rw sysfs_path set to /sys/devices/virtual/block/dm-0
+17:12:56,081 DBG blivet:                           DMDevice.read_current_size: exists: True ; path: /dev/mapper/live-rw ; sysfs_path: /sys/devices/virtual/block/dm-0 ;
+17:12:56,082 DBG blivet: updated live-rw size to 3 GiB (3 GiB)
+17:12:56,082 INF blivet: added dm live-rw (id 51) to device tree
+17:12:56,082 INF blivet: got device: DMDevice instance (0x7f9bbb8dfef0) --
+  name = live-rw  status = True  id = 51
+  children = []
+  parents = ['existing 0 B loop loop1 (27) with existing ext4 filesystem']
+  uuid = None  size = 3 GiB
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = True
+  sysfs path = /sys/devices/virtual/block/dm-0
+  target size = 3 GiB  path = /dev/mapper/live-rw
+  format args = []  original_format = None  target = None  dm_uuid = None
+17:12:56,107 DBG blivet:                  DeviceTree.handle_format: name: live-rw ;
+17:12:56,110 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+17:12:56,110 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 55
+17:12:56,112 DBG blivet:                              EFIFS.supported: supported: True ;
+17:12:56,113 DBG blivet: get_format('efi') returning EFIFS instance with object id 56
+17:12:56,115 DBG blivet:                                MacEFIFS.supported: supported: True ;
+17:12:56,115 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 57
+17:12:56,117 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+17:12:56,117 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 58
+17:12:56,118 INF blivet: type detected on 'live-rw' is 'ext4'
+17:12:56,154 DBG blivet: padding min size from 2.97 GiB up to 3 GiB
+17:12:56,158 DBG blivet:                        Ext4FS.supported: supported: True ;
+17:12:56,159 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 59
+17:12:56,161 DBG blivet:                       DMDevice._set_format: live-rw ; type: ext4 ; current: None ;
+17:12:56,161 INF blivet: got format: existing ext4 filesystem
+17:12:56,199 DBG blivet:                               Ext4FS.supported: supported: True ;
+17:12:56,236 DBG blivet:                                  Ext4FS.supported: supported: True ;
+17:12:56,240 DBG blivet:                DeviceTree.handle_device: name: live-base ; info: {'DEVLINKS': '/dev/disk/by-label/Anaconda /dev/mapper/live-base '
+             '/dev/disk/by-id/dm-name-live-base '
+             '/dev/disk/by-uuid/f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'DEVNAME': '/dev/dm-1',
+ 'DEVPATH': '/devices/virtual/block/dm-1',
+ 'DEVTYPE': 'disk',
+ 'DM_NAME': 'live-base',
+ 'DM_SUSPENDED': '0',
+ 'DM_UDEV_DISABLE_LIBRARY_FALLBACK_FLAG': '1',
+ 'DM_UDEV_PRIMARY_SOURCE_FLAG': '1',
+ 'DM_UDEV_RULES_VSN': '2',
+ 'ID_FS_LABEL': 'Anaconda',
+ 'ID_FS_LABEL_ENC': 'Anaconda',
+ 'ID_FS_TYPE': 'ext4',
+ 'ID_FS_USAGE': 'filesystem',
+ 'ID_FS_UUID': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_UUID_ENC': 'f32aa3db-37bd-42ad-be78-db555a97ac16',
+ 'ID_FS_VERSION': '1.0',
+ 'MAJOR': '253',
+ 'MINOR': '1',
+ 'SUBSYSTEM': 'block',
+ 'SYS_NAME': 'dm-1',
+ 'SYS_PATH': '/sys/devices/virtual/block/dm-1',
+ 'TAGS': ':systemd:',
+ 'USEC_INITIALIZED': '16391297'} ;
+17:12:56,241 INF blivet: scanning live-base (/sys/devices/virtual/block/dm-1)...
+17:12:56,243 DBG blivet:                  DeviceTree.get_device_by_name: name: live-base ; incomplete: False ; hidden: False ;
+17:12:56,245 DBG blivet:                  DeviceTree.get_device_by_name returned None
+17:12:56,313 DBG blivet:                 DMDevicePopulator.run: name: live-base ;
+17:12:56,319 DBG blivet:                     DeviceTree.get_device_by_name: name: loop1 ; incomplete: False ; hidden: False ;
+17:12:56,321 DBG blivet:                     DeviceTree.get_device_by_name returned existing 0 B loop loop1 (27) with existing ext4 filesystem
+17:12:56,328 DBG blivet:                   DeviceTree.get_device_by_name: name: live-base ; incomplete: False ; hidden: False ;
+17:12:56,329 DBG blivet:                   DeviceTree.get_device_by_name returned None
+17:12:56,329 DBG blivet: get_format('None') returning DeviceFormat instance with object id 62
+17:12:56,331 DBG blivet:                              LoopDevice.add_child: name: loop1 ; child: live-base ; kids: 1 ;
+17:12:56,332 DBG blivet: get_format('None') returning DeviceFormat instance with object id 63
+17:12:56,333 DBG blivet:                         DMDevice._set_format: live-base ; type: None ; current: None ;
+17:12:56,335 DBG blivet:                       DMDevice.update_sysfs_path: live-base ; status: True ;
+17:12:56,335 DBG blivet: live-base sysfs_path set to /sys/devices/virtual/block/dm-1
+17:12:56,337 DBG blivet:                           DMDevice.read_current_size: exists: True ; path: /dev/mapper/live-base ; sysfs_path: /sys/devices/virtual/block/dm-1 ;
+17:12:56,338 DBG blivet: updated live-base size to 3 GiB (3 GiB)
+17:12:56,339 INF blivet: added dm live-base (id 61) to device tree
+17:12:56,339 INF blivet: got device: DMDevice instance (0x7f9bd6cc13c8) --
+  name = live-base  status = True  id = 61
+  children = []
+  parents = ['existing 0 B loop loop1 (27) with existing ext4 filesystem']
+  uuid = None  size = 3 GiB
+  format = existing None
+  major = 0  minor = 0  exists = True  protected = True
+  sysfs path = /sys/devices/virtual/block/dm-1
+  target size = 3 GiB  path = /dev/mapper/live-base
+  format args = []  original_format = None  target = None  dm_uuid = None
+17:12:56,360 DBG blivet:                  DeviceTree.handle_format: name: live-base ;
+17:12:56,364 DBG blivet:                              AppleBootstrapFS.supported: supported: True ;
+17:12:56,365 DBG blivet: get_format('appleboot') returning AppleBootstrapFS instance with object id 65
+17:12:56,367 DBG blivet:                              EFIFS.supported: supported: True ;
+17:12:56,367 DBG blivet: get_format('efi') returning EFIFS instance with object id 66
+17:12:56,370 DBG blivet:                                MacEFIFS.supported: supported: True ;
+17:12:56,370 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 67
+17:12:56,372 DBG blivet:                                 MacEFIFS.supported: supported: True ;
+17:12:56,373 DBG blivet: get_format('macefi') returning MacEFIFS instance with object id 68
+17:12:56,373 INF blivet: type detected on 'live-base' is 'ext4'
+17:12:56,404 WRN blivet: Failed to obtain minimum size for device /dev/mapper/live-base: failed to gather info from resize program: 1
+17:12:56,406 DBG blivet:                        Ext4FS.supported: supported: True ;
+17:12:56,407 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 69
+17:12:56,409 DBG blivet:                       DMDevice._set_format: live-base ; type: ext4 ; current: None ;
+17:12:56,410 INF blivet: got format: existing ext4 filesystem
+17:12:56,450 DBG blivet:                               Ext4FS.supported: supported: True ;
+17:12:56,477 DBG blivet:                                  Ext4FS.supported: supported: True ;
+17:12:56,503 DBG blivet:                DiskDevice.teardown: vda ; status: True ; controllable: True ;
+17:12:56,505 DBG blivet:                    DeviceFormat.teardown: device: /dev/vda ; type: None ; status: False ;
+17:12:56,506 DBG blivet:                    DeviceFormat.teardown: device: /dev/vda ; type: None ; status: False ;
+17:12:56,526 DBG blivet:                LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+17:12:56,527 DBG blivet:                    FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+17:12:56,528 INF blivet: edd: collected mbr signatures: {}
+17:12:56,530 DBG blivet: edd: found device 0x80 at /sys/firmware/edd/int13_dev80/
+17:12:56,531 WRN blivet: mbr_signature is not a valid attribute
+17:12:56,533 DBG blivet: edd: data extracted from 0x80:<EddEntry path: /sys/firmware/edd/int13_dev80/ version: 0x30  mbr_signature: None sectors: 20971520 SCSI sysfs pci path: ../devices/pci0000:00/0000:00:04.0/virtio1/block/vda host_bus: PCI pci_dev: 00:04.0 channel: 0 interface: "SCSI    	id: 0  lun: 0" scsi_id: 0, scsi_lun: 0>
+17:12:56,533 INF blivet: edd: matched 0x80 to vda using PCI dev
+17:12:56,535 DBG blivet:             DiskDevice.teardown: vda ; status: True ; controllable: True ;
+17:12:56,537 DBG blivet:                 DeviceFormat.teardown: device: /dev/vda ; type: None ; status: False ;
+17:12:56,538 DBG blivet:                 DeviceFormat.teardown: device: /dev/vda ; type: None ; status: False ;
+17:12:56,557 DBG blivet:             LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+17:12:56,559 DBG blivet:                 FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+17:12:56,569 DBG blivet:                     Ext4FS.supported: supported: True ;
+17:12:56,571 DBG blivet:                     Ext4FS.supported: supported: True ;
+17:12:56,572 DBG blivet:                   Ext4FS.supported: supported: True ;
+17:12:59,856 DBG blivet:         DiskLabel.__init__:
+17:12:59,857 INF blivet: DiskLabel.parted_device returning None
+17:12:59,857 DBG blivet:         DMRaidMember.__init__:
+17:12:59,859 DBG blivet:           Ext2FS.supported: supported: True ;
+17:12:59,859 DBG blivet:         Ext2FS.supported: supported: True ;
+17:12:59,860 DBG blivet:           Ext3FS.supported: supported: True ;
+17:12:59,861 DBG blivet:         Ext3FS.supported: supported: True ;
+17:12:59,862 DBG blivet:           Ext4FS.supported: supported: True ;
+17:12:59,863 DBG blivet:         Ext4FS.supported: supported: True ;
+17:12:59,864 DBG blivet:           FATFS.supported: supported: True ;
+17:12:59,894 DBG blivet:         FATFS.supported: supported: True ;
+17:13:00,408 DBG blivet:             EFIFS.supported: supported: True ;
+17:13:00,414 DBG blivet:           EFIFS.supported: supported: True ;
+17:13:00,415 DBG blivet:             BTRFS.supported: supported: True ;
+17:13:00,416 DBG blivet:         BTRFS.supported: supported: True ;
+17:13:00,418 DBG blivet:           XFS.supported: supported: True ;
+17:13:00,637 DBG blivet:         XFS.supported: supported: True ;
+17:13:00,682 DBG blivet:           HFS.supported: supported: False ;
+17:13:00,684 DBG blivet:         HFS.supported: supported: False ;
+17:13:00,689 DBG blivet:             AppleBootstrapFS.supported: supported: True ;
+17:13:00,694 DBG blivet:           AppleBootstrapFS.supported: supported: True ;
+17:13:00,705 DBG blivet:           HFSPlus.supported: supported: False ;
+17:13:00,707 DBG blivet:         HFSPlus.supported: supported: False ;
+17:13:00,709 DBG blivet:               MacEFIFS.supported: supported: True ;
+17:13:00,712 DBG blivet:           MacEFIFS.supported: supported: True ;
+17:13:00,715 DBG blivet:           NTFS.supported: supported: False ;
+17:13:00,716 DBG blivet:         NTFS.supported: supported: False ;
+17:13:00,717 DBG blivet:           NFS.supported: supported: False ;
+17:13:00,718 DBG blivet:         NFS.supported: supported: False ;
+17:13:00,720 DBG blivet:           NFSv4.supported: supported: False ;
+17:13:00,721 DBG blivet:         NFSv4.supported: supported: False ;
+17:13:00,722 DBG blivet:           Iso9660FS.supported: supported: True ;
+17:13:00,723 DBG blivet:         Iso9660FS.supported: supported: True ;
+17:13:00,724 DBG blivet:             NoDevFS.supported: supported: False ;
+17:13:00,725 DBG blivet:         NoDevFS.supported: supported: False ;
+17:13:00,726 DBG blivet:             DevPtsFS.supported: supported: False ;
+17:13:00,727 DBG blivet:         DevPtsFS.supported: supported: False ;
+17:13:00,728 DBG blivet:             ProcFS.supported: supported: False ;
+17:13:00,729 DBG blivet:         ProcFS.supported: supported: False ;
+17:13:00,731 DBG blivet:             SysFS.supported: supported: False ;
+17:13:00,732 DBG blivet:         SysFS.supported: supported: False ;
+17:13:00,733 DBG blivet:               TmpFS.supported: supported: True ;
+17:13:00,741 DBG blivet:         TmpFS.supported: supported: True ;
+17:13:00,743 DBG blivet:           BindFS.supported: supported: False ;
+17:13:00,744 DBG blivet:         BindFS.supported: supported: False ;
+17:13:00,745 DBG blivet:             SELinuxFS.supported: supported: False ;
+17:13:00,746 DBG blivet:         SELinuxFS.supported: supported: False ;
+17:13:00,747 DBG blivet:             USBFS.supported: supported: False ;
+17:13:00,748 DBG blivet:         USBFS.supported: supported: False ;
+17:13:00,750 DBG blivet:             EFIVarFS.supported: supported: False ;
+17:13:00,751 DBG blivet:         EFIVarFS.supported: supported: False ;
+17:13:00,752 DBG blivet:         LUKS.__init__:
+17:13:00,754 DBG blivet:         Integrity.__init__:
+17:13:00,755 DBG blivet:         LVMPhysicalVolume.__init__:
+17:13:00,756 DBG blivet:         MDRaidMember.__init__:
+17:13:00,794 DBG blivet:         MultipathMember.__init__:
+17:13:00,795 DBG blivet:         SwapSpace.__init__:
+17:13:01,096 DBG blivet:              DeviceTree.get_dependent_devices: dep: existing 10 GiB disk vda (4) ; hidden: False ;
+17:13:01,100 DBG blivet: dep is a leaf
+17:13:01,100 DBG blivet: removing vda
+17:13:01,103 DBG blivet:                DeviceTree.get_dependent_devices: dep: existing 10 GiB disk vda (4) ; hidden: False ;
+17:13:01,105 DBG blivet: dep is a leaf
+17:13:01,106 DBG blivet: get_format('None') returning DeviceFormat instance with object id 110
+17:13:01,109 DBG blivet:                      DiskDevice._set_format: vda ; type: None ; current: None ;
+17:13:01,109 INF blivet: registered action: [109] destroy format None on disk vda (id 4)
+17:13:01,110 DBG blivet: get_format('None') returning DeviceFormat instance with object id 112
+17:13:01,112 DBG blivet:                    DiskDevice._set_format: vda ; type: None ; current: None ;
+17:13:01,113 INF blivet: registered action: [111] destroy format None on disk vda (id 4)
+17:13:01,115 DBG blivet:               DiskLabel.__init__: device: /dev/vda ;
+17:13:01,118 DBG blivet: selecting None disklabel for vda based on size
+17:13:01,120 DBG blivet:                     DiskLabel.fresh_parted_disk: device: /dev/vda ; label_type: msdos ;
+17:13:01,121 DBG blivet: selecting None disklabel for vda based on size
+17:13:01,121 DBG blivet: Did not change pmbr_boot on parted.Disk instance --
+  type: msdos  primaryPartitionCount: 0
+  lastPartitionNumber: -1  maxPrimaryPartitionCount: 4
+  partitions: []
+  device: <parted.device.Device object at 0x7f9bb305eba8>
+  PedDisk: <_ped.Disk object at 0x7f9bb4708d48>
+17:13:01,144 DBG blivet: get_format('disklabel') returning DiskLabel instance with object id 113
+17:13:01,146 DBG blivet:                    DiskDevice._set_format: vda ; type: disklabel ; current: None ;
+17:13:01,146 INF blivet: registered action: [114] create format msdos disklabel on disk vda (id 4)
+17:13:01,172 DBG blivet:                 Ext4FS.supported: supported: True ;
+17:13:01,172 DBG blivet: get_format('ext4') returning Ext4FS instance with object id 115
+17:13:01,173 DBG blivet: get_format('None') returning DeviceFormat instance with object id 117
+17:13:01,176 DBG blivet:                         DiskDevice.add_child: name: vda ; child: req0 ; kids: 0 ;
+17:13:01,178 DBG blivet:                    PartitionDevice._set_format: req0 ; type: ext4 ; current: None ;
+17:13:01,181 DBG blivet:                       DiskDevice.remove_child: name: vda ; child: req0 ; kids: 1 ;
+17:13:01,181 INF blivet: added partition req0 (id 116) to device tree
+17:13:01,181 INF blivet: registered action: [119] create device partition req0 (id 116)
+17:13:01,182 DBG blivet: get_format('None') returning DeviceFormat instance with object id 121
+17:13:01,184 DBG blivet:                    PartitionDevice._set_format: req0 ; type: ext4 ; current: ext4 ;
+17:13:01,185 INF blivet: registered action: [120] create format ext4 filesystem mounted at / on partition req0 (id 116)
+17:13:01,189 DBG blivet:            DiskDevice.setup: vda ; orig: False ; status: True ; controllable: True ;
+17:13:01,189 DBG blivet: removing all non-preexisting partitions ['req0(id 116)'] from disk(s) ['vda']
+17:13:01,190 DBG blivet: allocate_partitions: disks=['vda'] ; partitions=['req0(id 116)']
+17:13:01,190 DBG blivet: removing all non-preexisting partitions ['req0(id 116)'] from disk(s) ['vda']
+17:13:01,190 DBG blivet: allocating partition: req0 ; id: 116 ; disks: ['vda'] ;
+boot: False ; primary: False ; size: 1024 MiB ; grow: True ; max_size: 50 GiB ; start: None ; end: None
+17:13:01,192 DBG blivet: checking freespace on vda
+17:13:01,193 DBG blivet: get_best_free_space_region: disk=/dev/vda part_type=0 req_size=1024 MiB boot=False best=None grow=True start=None
+17:13:01,194 DBG blivet: checking 2-20971519 (10 GiB)
+17:13:01,195 DBG blivet: current free range is 2-20971519 (10 GiB)
+17:13:01,196 DBG blivet: evaluating growth potential for new layout
+17:13:01,196 DBG blivet: calculating growth for disk /dev/vda
+17:13:01,197 DBG blivet: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7f9bb5c98ba8>
+17:13:01,197 DBG blivet: adjusted start sector from 2 to 2048
+17:13:01,199 DBG blivet:               PartitionDevice._set_parted_partition: req0 ;
+17:13:01,199 DBG blivet: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305e8d0>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5c6a0b8>  PedPartition: <_ped.Partition object at 0x7f9bb5c61db0>
+17:13:01,201 DBG blivet:               PartitionDevice._set_disk: vda1 ; old: None ; new: vda ;
+17:13:01,203 DBG blivet:                    DiskDevice.add_child: name: vda ; child: vda1 ; kids: 0 ;
+17:13:01,204 DBG blivet: adding request 116 to chunk 20969472 (2048-20971519) on /dev/vda
+17:13:01,205 DBG blivet: Chunk.grow_requests: 20969472 (2048-20971519) on /dev/vda start = 2048  end = 20971519
+sector_size = 512 B
+
+17:13:01,206 DBG blivet: req: PartitionRequest instance --
+id = 116  name = vda1  growable = True
+base = 2097152  growth = 0  max_grow = 102760448
+done = False
+17:13:01,206 DBG blivet: 1 requests and 18872320 (9 GiB) left in chunk
+17:13:01,207 DBG blivet: adding 18872320 (9 GiB) to 116 (vda1)
+17:13:01,208 DBG blivet: new grow amount for request 116 (vda1) is 18872320 units, or 9 GiB
+17:13:01,209 DBG blivet: request 116 (vda1) growth: 18872320 (9 GiB) size: 10 GiB
+17:13:01,211 DBG blivet: disk /dev/vda growth: 18872320 (9 GiB)
+17:13:01,214 DBG blivet:               PartitionDevice._set_parted_partition: vda1 ;
+17:13:01,214 DBG blivet: device vda1 new parted_partition None
+17:13:01,216 DBG blivet:               PartitionDevice._set_disk: req0 ; old: vda ; new: None ;
+17:13:01,218 DBG blivet:                        DiskDevice.remove_child: name: vda ; child: req0 ; kids: 1 ;
+17:13:01,218 DBG blivet: total growth: 18872320 sectors
+17:13:01,219 DBG blivet: updating use_disk to vda, type: 0
+17:13:01,219 DBG blivet: new free: 2-20971519 / 10 GiB
+17:13:01,219 DBG blivet: new free allows for 18872320 sectors of growth
+17:13:01,222 DBG blivet: using alignment: parted.Alignment instance --
+  offset: 0  grainSize: 2048
+  PedAlignment: <_ped.Alignment object at 0x7f9bb5c98ba8>
+17:13:01,223 DBG blivet: adjusted start sector from 2 to 2048
+17:13:01,224 DBG blivet: created partition vda1 of 1024 MiB and added it to /dev/vda
+17:13:01,227 DBG blivet:               PartitionDevice._set_parted_partition: req0 ;
+17:13:01,227 DBG blivet: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305e8d0>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5c6a780>  PedPartition: <_ped.Partition object at 0x7f9bb5c61e08>
+17:13:01,229 DBG blivet:               PartitionDevice._set_disk: vda1 ; old: None ; new: vda ;
+17:13:01,231 DBG blivet:                    DiskDevice.add_child: name: vda ; child: vda1 ; kids: 0 ;
+17:13:01,233 DBG blivet:               PartitionDevice._set_parted_partition: vda1 ;
+17:13:01,233 DBG blivet: device vda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305e8d0>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5c6a4e0>  PedPartition: <_ped.Partition object at 0x7f9bb5c61fc0>
+17:13:01,234 DBG blivet: grow_partitions: disks=['vda'], partitions=['vda1(id 116)']
+17:13:01,234 DBG blivet: growable partitions are ['vda1']
+17:13:01,235 DBG blivet: adding request 116 to chunk 20969472 (2048-20971519) on /dev/vda
+17:13:01,236 DBG blivet: disk vda has 1 chunks
+17:13:01,236 DBG blivet: Chunk.grow_requests: 20969472 (2048-20971519) on /dev/vda start = 2048  end = 20971519
+sector_size = 512 B
+
+17:13:01,237 DBG blivet: req: PartitionRequest instance --
+id = 116  name = vda1  growable = True
+base = 2097152  growth = 0  max_grow = 102760448
+done = False
+17:13:01,237 DBG blivet: 1 requests and 18872320 (9 GiB) left in chunk
+17:13:01,238 DBG blivet: adding 18872320 (9 GiB) to 116 (vda1)
+17:13:01,239 DBG blivet: new grow amount for request 116 (vda1) is 18872320 units, or 9 GiB
+17:13:01,240 DBG blivet: growing partitions on vda
+17:13:01,240 DBG blivet: partition vda1 (116): 0
+17:13:01,241 DBG blivet: new geometry for vda1: parted.Geometry instance --
+  start: 2048  end: 20971519  length: 20969472
+  device: <parted.device.Device object at 0x7f9bb305e748>  PedGeometry: <_ped.Geometry object at 0x7f9bb5c6a6a0>
+17:13:01,241 DBG blivet: removing all non-preexisting partitions ['vda1(id 116)'] from disk(s) ['vda']
+17:13:01,242 DBG blivet:                PartitionDevice._set_parted_partition: vda1 ;
+17:13:01,243 DBG blivet: device vda1 new parted_partition None
+17:13:01,244 DBG blivet:                PartitionDevice._set_disk: req0 ; old: vda ; new: None ;
+17:13:01,246 DBG blivet:                         DiskDevice.remove_child: name: vda ; child: req0 ; kids: 1 ;
+17:13:01,247 DBG blivet: back from remove_new_partitions
+17:13:01,247 DBG blivet: extended: None
+17:13:01,247 DBG blivet: setting req0 new geometry: parted.Geometry instance --
+  start: 2048  end: 20971519  length: 20969472
+  device: <parted.device.Device object at 0x7f9bb305e748>  PedGeometry: <_ped.Geometry object at 0x7f9bb5c6a6a0>
+17:13:01,249 DBG blivet:               PartitionDevice._set_parted_partition: req0 ;
+17:13:01,250 DBG blivet: device req0 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305e8d0>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5c6ad30>  PedPartition: <_ped.Partition object at 0x7f9bb5c61f10>
+17:13:01,251 DBG blivet:               PartitionDevice._set_disk: vda1 ; old: None ; new: vda ;
+17:13:01,253 DBG blivet:                    DiskDevice.add_child: name: vda ; child: vda1 ; kids: 0 ;
+17:13:01,255 DBG blivet:               PartitionDevice._set_parted_partition: vda1 ;
+17:13:01,256 DBG blivet: device vda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305e8d0>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5c77048>  PedPartition: <_ped.Partition object at 0x7f9bb5c61eb8>
+17:13:01,256 DBG blivet: fixing size of non-existent 10 GiB partition vda1 (116) with non-existent ext4 filesystem mounted at /
+17:13:01,267 DBG blivet:            DeviceTree.get_device_by_path: path: /dev/vda1 ; incomplete: False ; hidden: False ;
+17:13:01,268 DBG blivet:            DeviceTree.get_device_by_path returned non-existent 10 GiB partition vda1 (116) with non-existent ext4 filesystem mounted at /
+17:13:01,297 DBG blivet:          DeviceTree.get_device_by_path: path: /dev/vda1 ; incomplete: False ; hidden: False ;
+17:13:01,299 DBG blivet:          DeviceTree.get_device_by_path returned non-existent 10 GiB partition vda1 (116) with non-existent ext4 filesystem mounted at /
+17:13:04,533 DBG blivet:               LoopDevice.teardown: loop2 ; status: False ; controllable: False ;
+17:13:04,534 DBG blivet:                   FileDevice.teardown: /overlay (deleted) ; status: False ; controllable: False ;
+17:13:04,536 DBG blivet:               PartitionDevice.teardown: vda1 ; status: False ; controllable: True ;
+17:13:04,537 DBG blivet:                   DiskDevice.teardown: vda ; status: True ; controllable: True ;
+17:13:04,538 DBG blivet:                       DeviceFormat.teardown: device: /dev/vda ; type: None ; status: False ;
+17:13:04,563 DBG blivet: action: [109] destroy format None on disk vda (id 4)
+17:13:04,563 DBG blivet: action: [111] destroy format None on disk vda (id 4)
+17:13:04,563 DBG blivet: action: [114] create format msdos disklabel on disk vda (id 4)
+17:13:04,564 DBG blivet: action: [119] create device partition vda1 (id 116)
+17:13:04,564 DBG blivet: action: [120] create format ext4 filesystem mounted at / on partition vda1 (id 116)
+17:13:04,565 INF blivet: pruning action queue...
+17:13:04,565 INF blivet: removing obsolete action 111 (109)
+17:13:04,592 INF blivet: resetting parted disks...
+17:13:04,594 DBG blivet:                     DiskLabel.reset_parted_disk: device: /dev/vda ;
+17:13:04,595 DBG blivet:                     PartitionDevice.pre_commit_fixup: vda1 ;
+17:13:04,595 INF blivet: sorting actions...
+17:13:04,596 DBG blivet: action: [109] destroy format None on disk vda (id 4)
+17:13:04,597 DBG blivet: lvm filter: removing vda1 from the reject list
+17:13:04,597 DBG blivet: vda1 wasn't in the reject list
+17:13:04,597 DBG blivet: action: [114] create format msdos disklabel on disk vda (id 4)
+17:13:04,597 DBG blivet: lvm filter: removing vda1 from the reject list
+17:13:04,598 DBG blivet: vda1 wasn't in the reject list
+17:13:04,598 DBG blivet: action: [119] create device partition vda1 (id 116)
+17:13:04,598 DBG blivet: action: [120] create format ext4 filesystem mounted at / on partition vda1 (id 116)
+17:13:04,599 INF blivet: executing action: [109] destroy format None on disk vda (id 4)
+17:13:04,600 DBG blivet:                     DiskDevice.setup: vda ; orig: True ; status: True ; controllable: True ;
+17:13:04,601 DBG blivet:                     DeviceFormat.destroy: device: /dev/vda ; type: None ; status: False ;
+17:13:04,644 INF blivet: executing action: [114] create format msdos disklabel on disk vda (id 4)
+17:13:04,647 DBG blivet:                     DiskDevice.setup: vda ; orig: False ; status: True ; controllable: True ;
+17:13:04,649 DBG blivet:                     DiskLabel.create: device: /dev/vda ; type: disklabel ; status: False ;
+17:13:04,650 DBG blivet:                       DiskLabel._create: device: /dev/vda ; type: disklabel ; status: False ;
+17:13:04,652 DBG blivet:                         DiskLabel.commit: device: /dev/vda ; numparts: 0 ;
+17:13:04,714 DBG blivet:                     DiskDevice.update_sysfs_path: vda ; status: True ;
+17:13:04,714 DBG blivet: vda sysfs_path set to /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda
+17:13:04,715 INF blivet: executing action: [119] create device partition vda1 (id 116)
+17:13:04,716 DBG blivet:                     PartitionDevice.create: vda1 ; status: False ;
+17:13:04,717 DBG blivet:                         PartitionDevice.setup_parents: name: vda1 ; orig: False ;
+17:13:04,719 DBG blivet:                           DiskDevice.setup: vda ; orig: False ; status: True ; controllable: True ;
+17:13:04,720 DBG blivet:                           DiskLabel.setup: device: /dev/vda ; type: disklabel ; status: False ;
+17:13:04,722 DBG blivet:                       PartitionDevice._create: vda1 ; status: False ;
+17:13:04,724 DBG blivet:                         PartitionDevice._wipe: vda1 ; status: False ;
+17:13:04,786 DBG blivet:                         DiskLabel.commit: device: /dev/vda ; numparts: 1 ;
+17:13:04,819 DBG blivet: post-commit partition path is /dev/vda1
+17:13:04,821 DBG blivet:                           PartitionDevice._set_parted_partition: vda1 ;
+17:13:04,821 DBG blivet: device vda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305eac8>  fileSystem: None
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5b74be0>  PedPartition: <_ped.Partition object at 0x7f9bb5b66eb8>
+17:13:04,824 DBG blivet:                         DeviceFormat.destroy: device: /dev/vda1 ; type: None ; status: False ;
+17:13:04,839 DBG blivet:                           PartitionDevice.setup: vda1 ; orig: False ; status: True ; controllable: True ;
+17:13:04,841 DBG blivet:                           PartitionDevice.update_sysfs_path: vda1 ; status: True ;
+17:13:04,842 DBG blivet: vda1 sysfs_path set to /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda/vda1
+17:13:04,863 DBG blivet:                                 PartitionDevice.read_current_size: exists: True ; path: /dev/vda1 ; sysfs_path: /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda/vda1 ;
+17:13:04,865 DBG blivet: updated vda1 size to 10 GiB (10 GiB)
+17:13:04,865 INF blivet: executing action: [120] create format ext4 filesystem mounted at / on partition vda1 (id 116)
+17:13:04,868 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 1 ;
+17:13:04,869 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 2 ;
+17:13:04,871 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 3 ;
+17:13:04,872 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 4 ;
+17:13:04,873 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 5 ;
+17:13:04,875 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 6 ;
+17:13:04,876 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 8 ;
+17:13:04,877 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 9 ;
+17:13:04,878 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 10 ;
+17:13:04,880 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 11 ;
+17:13:04,881 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 12 ;
+17:13:04,885 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 13 ;
+17:13:04,886 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 14 ;
+17:13:04,887 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 15 ;
+17:13:04,889 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 16 ;
+17:13:04,890 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 17 ;
+17:13:04,891 DBG blivet:                     PartitionDevice.unset_flag: path: /dev/vda1 ; flag: 18 ;
+17:13:04,893 DBG blivet:                     DiskLabel.commit_to_disk: device: /dev/vda ; numparts: 1 ;
+17:13:04,923 DBG blivet:                     PartitionDevice.setup: vda1 ; orig: False ; status: True ; controllable: True ;
+17:13:04,924 DBG blivet:                     Ext4FS.create: device: /dev/vda1 ; type: ext4 ; status: False ;
+17:13:04,925 DBG blivet:                       Ext4FS._create: type: ext4 ; device: /dev/vda1 ; mountpoint: / ;
+17:13:05,318 DBG blivet:                     PartitionDevice.update_sysfs_path: vda1 ; status: True ;
+17:13:05,319 DBG blivet: vda1 sysfs_path set to /sys/devices/pci0000:00/0000:00:04.0/virtio1/block/vda/vda1
+17:13:05,322 DBG blivet:                       PartitionDevice._set_parted_partition: vda1 ;
+17:13:05,323 DBG blivet: device vda1 new parted_partition parted.Partition instance --
+  disk: <parted.disk.Disk object at 0x7f9bb305eac8>  fileSystem: <parted.filesystem.FileSystem object at 0x7f9bb5bd2e10>
+  number: 1  path: /dev/vda1  type: 0
+  name: None  active: True  busy: False
+  geometry: <parted.geometry.Geometry object at 0x7f9bb5bd2f98>  PedPartition: <_ped.Partition object at 0x7f9bb5bf1678>
+17:13:05,326 DBG blivet:                          Ext4FS.supported: supported: True ;
+17:13:05,328 DBG blivet:                          Ext4FS.supported: supported: True ;
+17:13:05,330 DBG blivet:                        Ext4FS.supported: supported: True ;
+17:13:05,333 DBG blivet:                          Ext4FS.supported: supported: True ;
+17:13:05,336 DBG blivet:                    BindFS.supported: supported: False ;
+17:13:05,336 DBG blivet: get_format('bind') returning BindFS instance with object id 124
+17:13:05,336 DBG blivet: get_format('None') returning DeviceFormat instance with object id 126
+17:13:05,338 DBG blivet:                       DirectoryDevice._set_format: /dev ; type: bind ; current: None ;
+17:13:05,339 DBG blivet:                     DirectoryDevice.update_sysfs_path: /dev ; status: True ;
+17:13:05,340 ERR blivet: failed to update sysfs path for /dev: not a device file: '/dev'
+17:13:05,340 DBG blivet: updated /dev size to 2.95 KiB (2.95 KiB)
+17:13:05,342 DBG blivet:                        TmpFS.supported: supported: True ;
+17:13:05,348 DBG blivet: get_format('tmpfs') returning TmpFS instance with object id 128
+17:13:05,348 DBG blivet: get_format('None') returning DeviceFormat instance with object id 130
+17:13:05,350 DBG blivet:                       NoDevice._set_format: tmpfs ; type: tmpfs ; current: None ;
+17:13:05,352 DBG blivet:                     NoDevice.update_sysfs_path: tmpfs ; status: False ;
+17:13:05,353 ERR blivet: failed to update sysfs path for tmpfs: [Errno 2] No such file or directory: 'tmpfs'
+17:13:05,354 DBG blivet:                      DevPtsFS.supported: supported: False ;
+17:13:05,354 DBG blivet: get_format('devpts') returning DevPtsFS instance with object id 132
+17:13:05,355 DBG blivet: get_format('None') returning DeviceFormat instance with object id 134
+17:13:05,356 DBG blivet:                       NoDevice._set_format: devpts ; type: devpts ; current: None ;
+17:13:05,358 DBG blivet:                     NoDevice.update_sysfs_path: devpts ; status: False ;
+17:13:05,358 ERR blivet: failed to update sysfs path for devpts: [Errno 2] No such file or directory: 'devpts'
+17:13:05,359 DBG blivet:                      SysFS.supported: supported: False ;
+17:13:05,360 DBG blivet: get_format('sysfs') returning SysFS instance with object id 136
+17:13:05,360 DBG blivet: get_format('None') returning DeviceFormat instance with object id 138
+17:13:05,361 DBG blivet:                       NoDevice._set_format: sysfs ; type: sysfs ; current: None ;
+17:13:05,363 DBG blivet:                     NoDevice.update_sysfs_path: sysfs ; status: False ;
+17:13:05,363 ERR blivet: failed to update sysfs path for sysfs: [Errno 2] No such file or directory: 'sysfs'
+17:13:05,364 DBG blivet:                      ProcFS.supported: supported: False ;
+17:13:05,364 DBG blivet: get_format('proc') returning ProcFS instance with object id 140
+17:13:05,365 DBG blivet: get_format('None') returning DeviceFormat instance with object id 142
+17:13:05,366 DBG blivet:                       NoDevice._set_format: proc ; type: proc ; current: None ;
+17:13:05,368 DBG blivet:                     NoDevice.update_sysfs_path: proc ; status: False ;
+17:13:05,368 ERR blivet: failed to update sysfs path for proc: [Errno 2] No such file or directory: 'proc'
+17:13:05,369 DBG blivet:                      SELinuxFS.supported: supported: False ;
+17:13:05,369 DBG blivet: get_format('selinuxfs') returning SELinuxFS instance with object id 144
+17:13:05,369 DBG blivet: get_format('None') returning DeviceFormat instance with object id 146
+17:13:05,371 DBG blivet:                       NoDevice._set_format: selinuxfs ; type: selinuxfs ; current: None ;
+17:13:05,373 DBG blivet:                     NoDevice.update_sysfs_path: selinuxfs ; status: False ;
+17:13:05,373 ERR blivet: failed to update sysfs path for selinuxfs: [Errno 2] No such file or directory: 'selinuxfs'
+17:13:05,374 DBG blivet:                      USBFS.supported: supported: False ;
+17:13:05,374 DBG blivet: get_format('usbfs') returning USBFS instance with object id 148
+17:13:05,375 DBG blivet: get_format('None') returning DeviceFormat instance with object id 150
+17:13:05,376 DBG blivet:                       NoDevice._set_format: usbfs ; type: usbfs ; current: None ;
+17:13:05,377 DBG blivet:                     NoDevice.update_sysfs_path: usbfs ; status: False ;
+17:13:05,378 ERR blivet: failed to update sysfs path for usbfs: [Errno 2] No such file or directory: 'usbfs'
+17:13:05,379 DBG blivet:                    BindFS.supported: supported: False ;
+17:13:05,379 DBG blivet: get_format('bind') returning BindFS instance with object id 152
+17:13:05,379 DBG blivet: get_format('None') returning DeviceFormat instance with object id 154
+17:13:05,381 DBG blivet:                       DirectoryDevice._set_format: /run ; type: bind ; current: None ;
+17:13:05,382 DBG blivet:                     DirectoryDevice.update_sysfs_path: /run ; status: True ;
+17:13:05,382 ERR blivet: failed to update sysfs path for /run: not a device file: '/run'
+17:13:05,383 DBG blivet: updated /run size to 700 B (700 B)
+17:13:05,384 DBG blivet:                PartitionDevice.setup: vda1 ; orig: False ; status: True ; controllable: True ;
+17:13:05,413 DBG blivet:                Ext4FS.setup: device: /dev/vda1 ; type: ext4 ; status: False ;
+17:13:05,462 DBG blivet:                DirectoryDevice.setup: /dev ; orig: False ; status: True ; controllable: True ;
+17:13:05,573 DBG blivet:                BindFS.setup: device: /dev ; type: bind ; status: False ;
+17:13:05,610 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /dev/lost+found to system_u:object_r:lost_found_t:s0
+17:13:05,611 DBG blivet:                NoDevice.setup: devpts ; orig: False ; status: False ; controllable: True ;
+17:13:05,689 DBG blivet:                DevPtsFS.setup: device: devpts ; type: devpts ; status: False ;
+17:13:05,722 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /dev/pts/lost+found to system_u:object_r:lost_found_t:s0
+17:13:05,724 DBG blivet:                NoDevice.setup: tmpfs ; orig: False ; status: False ; controllable: True ;
+17:13:05,776 DBG blivet:                TmpFS.setup: device: tmpfs ; type: tmpfs ; status: True ;
+17:13:05,787 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /dev/shm/lost+found to system_u:object_r:lost_found_t:s0
+17:13:05,789 DBG blivet:                NoDevice.setup: proc ; orig: False ; status: False ; controllable: True ;
+17:13:05,865 DBG blivet:                ProcFS.setup: device: proc ; type: proc ; status: False ;
+17:13:05,900 INF blivet: failed to set SELinux context for /mnt/sysimage/proc: [Errno 95] Operation not supported
+17:13:05,900 WRN blivet: Failed to reset SElinux context for newly mounted filesystem root directory to default.
+17:13:05,901 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /proc/lost+found to system_u:object_r:lost_found_t:s0
+17:13:05,948 DBG blivet:                DirectoryDevice.setup: /run ; orig: False ; status: True ; controllable: True ;
+17:13:06,051 DBG blivet:                BindFS.setup: device: /run ; type: bind ; status: False ;
+17:13:06,104 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /run/lost+found to system_u:object_r:lost_found_t:s0
+17:13:06,105 DBG blivet:                NoDevice.setup: sysfs ; orig: False ; status: False ; controllable: True ;
+17:13:06,176 DBG blivet:                SysFS.setup: device: sysfs ; type: sysfs ; status: False ;
+17:13:06,208 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /sys/lost+found to system_u:object_r:lost_found_t:s0
+17:13:06,210 DBG blivet:                NoDevice.setup: selinuxfs ; orig: False ; status: False ; controllable: True ;
+17:13:06,279 DBG blivet:                SELinuxFS.setup: device: selinuxfs ; type: selinuxfs ; status: False ;
+17:13:06,311 INF blivet: failed to set SELinux context for /mnt/sysimage/sys/fs/selinux: [Errno 95] Operation not supported
+17:13:06,311 WRN blivet: Failed to reset SElinux context for newly mounted filesystem root directory to default.
+17:13:06,311 WRN blivet: Failed to set SELinux context for newly mounted filesystem lost+found directory at /sys/fs/selinux/lost+found to system_u:object_r:lost_found_t:s0

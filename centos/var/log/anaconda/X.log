@@ -1,0 +1,251 @@
+[    28.984] (WW) Failed to open protocol names file /usr/lib64/xorg/protocol.txt
+[    28.984] 
+X.Org X Server 1.20.3
+X Protocol Version 11, Revision 0
+[    28.984] Build Operating System:  4.19.34-300.el7.x86_64 
+[    28.984] Current Operating System: Linux localhost.localdomain 4.18.0-80.el8.x86_64 #1 SMP Tue Jun 4 09:19:46 UTC 2019 x86_64
+[    28.984] Kernel command line: method=http://mirror.centos.org/centos/8.0.1905/BaseOS/x86_64/kickstart/ ks=file:/ks.cfg
+[    28.984] Build Date: 21 May 2019  08:56:37PM
+[    28.984] Build ID: xorg-x11-server 1.20.3-5.el8 
+[    28.984] Current version of pixman: 0.36.0
+[    28.984] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    28.984] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    28.984] (++) Log file: "/tmp/X.log", Time: Fri Sep 27 17:12:52 2019
+[    28.985] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    28.985] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    28.992] (==) No Layout section.  Using the first Screen section.
+[    28.992] (==) No screen section available. Using defaults.
+[    28.992] (**) |-->Screen "Default Screen Section" (0)
+[    28.992] (**) |   |-->Monitor "<default monitor>"
+[    28.997] (==) No monitor specified for screen "Default Screen Section".
+	Using a default monitor configuration.
+[    28.997] (==) Automatically adding devices
+[    28.997] (==) Automatically enabling devices
+[    28.997] (==) Automatically adding GPU devices
+[    28.997] (==) Automatically binding GPU devices
+[    28.997] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    28.997] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[    28.997] (==) ModulePath set to "/usr/lib64/xorg/modules"
+[    28.997] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    28.997] (II) Loader magic: 0x562da5f57020
+[    28.997] (II) Module ABI versions:
+[    28.997] 	X.Org ANSI C Emulation: 0.4
+[    28.997] 	X.Org Video Driver: 24.0
+[    28.997] 	X.Org XInput driver : 24.1
+[    28.997] 	X.Org Server Extension : 10.0
+[    28.998] (++) using VT number 6
+
+[    28.998] (II) systemd-logind: logind integration requires -keeptty and -keeptty was not provided, disabling logind integration
+[    28.998] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    28.998] (II) Platform probe for /sys/devices/pci0000:00/0000:00:02.0/drm/card0
+[    29.001] (--) PCI:*(0@0:2:0) 1013:00b8:1af4:1100 rev 0, Mem @ 0xfc000000/33554432, 0xfebd0000/4096, BIOS @ 0x????????/131072
+[    29.001] (II) LoadModule: "glx"
+[    29.002] (II) Loading /usr/lib64/xorg/modules/extensions/libglx.so
+[    29.024] (II) Module glx: vendor="X.Org Foundation"
+[    29.024] 	compiled for 1.20.3, module version = 1.0.0
+[    29.024] 	ABI class: X.Org Server Extension, version 10.0
+[    29.024] (==) Matched modesetting as autoconfigured driver 0
+[    29.024] (==) Matched fbdev as autoconfigured driver 1
+[    29.024] (==) Matched vesa as autoconfigured driver 2
+[    29.024] (==) Assigned the driver to the xf86ConfigLayout
+[    29.024] (II) LoadModule: "modesetting"
+[    29.028] (II) Loading /usr/lib64/xorg/modules/drivers/modesetting_drv.so
+[    29.029] (II) Module modesetting: vendor="X.Org Foundation"
+[    29.029] 	compiled for 1.20.3, module version = 1.20.3
+[    29.029] 	Module class: X.Org Video Driver
+[    29.029] 	ABI class: X.Org Video Driver, version 24.0
+[    29.029] (II) LoadModule: "fbdev"
+[    29.029] (II) Loading /usr/lib64/xorg/modules/drivers/fbdev_drv.so
+[    29.033] (II) Module fbdev: vendor="X.Org Foundation"
+[    29.033] 	compiled for 1.20.3, module version = 0.5.0
+[    29.033] 	Module class: X.Org Video Driver
+[    29.033] 	ABI class: X.Org Video Driver, version 24.0
+[    29.033] (II) LoadModule: "vesa"
+[    29.034] (II) Loading /usr/lib64/xorg/modules/drivers/vesa_drv.so
+[    29.038] (II) Module vesa: vendor="X.Org Foundation"
+[    29.038] 	compiled for 1.20.3, module version = 2.4.0
+[    29.038] 	Module class: X.Org Video Driver
+[    29.038] 	ABI class: X.Org Video Driver, version 24.0
+[    29.038] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[    29.038] (II) FBDEV: driver for framebuffer: fbdev
+[    29.038] (II) VESA: driver for VESA chipsets: vesa
+[    29.041] (II) modeset(0): using drv /dev/dri/card0
+[    29.041] (WW) Falling back to old probe method for fbdev
+[    29.041] (II) Loading sub module "fbdevhw"
+[    29.041] (II) LoadModule: "fbdevhw"
+[    29.041] (II) Loading /usr/lib64/xorg/modules/libfbdevhw.so
+[    29.041] (II) Module fbdevhw: vendor="X.Org Foundation"
+[    29.041] 	compiled for 1.20.3, module version = 0.0.2
+[    29.041] 	ABI class: X.Org Video Driver, version 24.0
+[    29.042] (II) modeset(0): Using 24bpp hw front buffer with 32bpp shadow
+[    29.042] (II) modeset(0): Creating default Display subsection in Screen section
+	"Default Screen Section" for depth/fbbpp 24/32
+[    29.042] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[    29.042] (==) modeset(0): RGB weight 888
+[    29.042] (==) modeset(0): Default visual is TrueColor
+[    29.042] (**) modeset(0): Cannot use glamor with 24bpp packed fb
+[    29.042] (II) modeset(0): ShadowFB: preferred YES, enabled FORCE
+[    29.042] (II) modeset(0): Double-buffered shadow updates: off
+[    29.047] (II) modeset(0): Output VGA-1 has no monitor section
+[    29.047] (II) modeset(0): EDID for output VGA-1
+[    29.047] (II) modeset(0): Printing probed modes for output VGA-1
+[    29.047] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz eP)
+[    29.047] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x960"x60.0  108.00  1280 1376 1488 1800  960 961 964 1000 +hsync +vsync (60.0 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x800"x59.8   83.50  1280 1352 1480 1680  800 803 809 831 -hsync +vsync (49.7 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x800"x59.9   71.00  1280 1328 1360 1440  800 803 809 823 +hsync -vsync (49.3 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x768"x59.9   79.50  1280 1344 1472 1664  768 771 778 798 -hsync +vsync (47.8 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x768"x60.0   68.25  1280 1328 1360 1440  768 771 778 790 +hsync -vsync (47.4 kHz e)
+[    29.047] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[    29.047] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[    29.047] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[    29.047] (II) modeset(0): Modeline "848x480"x60.0   33.75  848 864 976 1088  480 486 494 517 +hsync +vsync (31.0 kHz e)
+[    29.047] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[    29.047] (II) modeset(0): Output VGA-1 connected
+[    29.047] (II) modeset(0): Using exact sizes for initial modes
+[    29.047] (II) modeset(0): Output VGA-1 using initial mode 1024x768 +0+0
+[    29.047] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[    29.047] (++) modeset(0): DPI set to (96, 96)
+[    29.047] (II) Loading sub module "fb"
+[    29.047] (II) LoadModule: "fb"
+[    29.047] (II) Loading /usr/lib64/xorg/modules/libfb.so
+[    29.051] (II) Module fb: vendor="X.Org Foundation"
+[    29.051] 	compiled for 1.20.3, module version = 1.0.0
+[    29.051] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    29.051] (II) Loading sub module "shadow"
+[    29.051] (II) LoadModule: "shadow"
+[    29.051] (II) Loading /usr/lib64/xorg/modules/libshadow.so
+[    29.055] (II) Module shadow: vendor="X.Org Foundation"
+[    29.055] 	compiled for 1.20.3, module version = 1.1.0
+[    29.055] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[    29.055] (II) UnloadModule: "fbdev"
+[    29.055] (II) Unloading fbdev
+[    29.055] (II) UnloadSubModule: "fbdevhw"
+[    29.055] (II) Unloading fbdevhw
+[    29.055] (II) UnloadModule: "vesa"
+[    29.055] (II) Unloading vesa
+[    29.066] (==) modeset(0): Backing store enabled
+[    29.066] (==) modeset(0): Silken mouse enabled
+[    29.066] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[    29.066] (==) modeset(0): DPMS enabled
+[    29.066] (II) Initializing extension Generic Event Extension
+[    29.066] (II) Initializing extension SHAPE
+[    29.066] (II) Initializing extension MIT-SHM
+[    29.066] (II) Initializing extension XInputExtension
+[    29.066] (II) Initializing extension XTEST
+[    29.067] (II) Initializing extension BIG-REQUESTS
+[    29.067] (II) Initializing extension SYNC
+[    29.067] (II) Initializing extension XKEYBOARD
+[    29.067] (II) Initializing extension XC-MISC
+[    29.067] (II) Initializing extension XFIXES
+[    29.067] (II) Initializing extension RENDER
+[    29.067] (II) Initializing extension RANDR
+[    29.067] (II) Initializing extension COMPOSITE
+[    29.067] (II) Initializing extension DAMAGE
+[    29.067] (II) Initializing extension MIT-SCREEN-SAVER
+[    29.067] (II) Initializing extension DOUBLE-BUFFER
+[    29.067] (II) Initializing extension RECORD
+[    29.067] (II) Initializing extension DPMS
+[    29.067] (II) Initializing extension Present
+[    29.067] (II) Initializing extension DRI3
+[    29.067] (II) Initializing extension X-Resource
+[    29.067] (II) Initializing extension XVideo
+[    29.067] (II) Initializing extension XVideo-MotionCompensation
+[    29.067] (II) Initializing extension SELinux
+[    29.067] (II) SELinux: Disabled by boolean
+[    29.067] (II) Initializing extension GLX
+[    29.067] (II) AIGLX: Screen 0 is not DRI2 capable
+[    30.068] (II) IGLX: Loaded and initialized swrast
+[    30.068] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[    30.068] (II) Initializing extension XFree86-VidModeExtension
+[    30.068] (II) Initializing extension XFree86-DGA
+[    30.068] (II) Initializing extension XFree86-DRI
+[    30.068] (II) Initializing extension DRI2
+[    30.068] (II) modeset(0): Damage tracking initialized
+[    30.068] (II) modeset(0): Setting screen physical size to 270 x 203
+[    30.158] (II) config/udev: Adding input device Power Button (/dev/input/event0)
+[    30.158] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[    30.158] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    30.158] (II) LoadModule: "libinput"
+[    30.159] (II) Loading /usr/lib64/xorg/modules/input/libinput_drv.so
+[    30.165] (II) Module libinput: vendor="X.Org Foundation"
+[    30.165] 	compiled for 1.20.3, module version = 0.28.0
+[    30.165] 	Module class: X.Org XInput Driver
+[    30.165] 	ABI class: X.Org XInput driver, version 24.1
+[    30.165] (II) Using input driver 'libinput' for 'Power Button'
+[    30.165] (**) Power Button: always reports core events
+[    30.165] (**) Option "Device" "/dev/input/event0"
+[    30.166] (**) Option "_source" "server/udev"
+[    30.171] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    30.171] (II) event0  - Power Button: device is a keyboard
+[    30.171] (II) event0  - Power Button: device removed
+[    30.181] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input0/event0"
+[    30.181] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    30.181] (II) event0  - Power Button: is tagged by udev as: Keyboard
+[    30.181] (II) event0  - Power Button: device is a keyboard
+[    30.182] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event1)
+[    30.182] (**) AT Translated Set 2 keyboard: Applying InputClass "evdev keyboard catchall"
+[    30.182] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    30.182] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    30.182] (**) AT Translated Set 2 keyboard: always reports core events
+[    30.182] (**) Option "Device" "/dev/input/event1"
+[    30.182] (**) Option "_source" "server/udev"
+[    30.183] (II) event1  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    30.183] (II) event1  - AT Translated Set 2 keyboard: device is a keyboard
+[    30.183] (II) event1  - AT Translated Set 2 keyboard: device removed
+[    30.193] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input1/event1"
+[    30.193] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 7)
+[    30.193] (II) event1  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    30.193] (II) event1  - AT Translated Set 2 keyboard: device is a keyboard
+[    30.194] (II) config/udev: Adding input device VirtualPS/2 VMware VMMouse (/dev/input/event3)
+[    30.194] (**) VirtualPS/2 VMware VMMouse: Applying InputClass "evdev pointer catchall"
+[    30.194] (**) VirtualPS/2 VMware VMMouse: Applying InputClass "libinput pointer catchall"
+[    30.194] (II) Using input driver 'libinput' for 'VirtualPS/2 VMware VMMouse'
+[    30.194] (**) VirtualPS/2 VMware VMMouse: always reports core events
+[    30.194] (**) Option "Device" "/dev/input/event3"
+[    30.194] (**) Option "_source" "server/udev"
+[    30.195] (II) event3  - VirtualPS/2 VMware VMMouse: is tagged by udev as: Mouse
+[    30.195] (II) event3  - VirtualPS/2 VMware VMMouse: device is a pointer
+[    30.195] (II) event3  - VirtualPS/2 VMware VMMouse: device removed
+[    30.213] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input3/event3"
+[    30.213] (II) XINPUT: Adding extended input device "VirtualPS/2 VMware VMMouse" (type: MOUSE, id 8)
+[    30.213] (**) Option "AccelerationScheme" "none"
+[    30.213] (**) VirtualPS/2 VMware VMMouse: (accel) selected scheme none/0
+[    30.213] (**) VirtualPS/2 VMware VMMouse: (accel) acceleration factor: 2.000
+[    30.213] (**) VirtualPS/2 VMware VMMouse: (accel) acceleration threshold: 4
+[    30.214] (II) event3  - VirtualPS/2 VMware VMMouse: is tagged by udev as: Mouse
+[    30.214] (II) event3  - VirtualPS/2 VMware VMMouse: device is a pointer
+[    30.214] (II) config/udev: Adding input device VirtualPS/2 VMware VMMouse (/dev/input/mouse1)
+[    30.214] (II) No input driver specified, ignoring this device.
+[    30.214] (II) This device may have been added with another device file.
+[    30.215] (II) config/udev: Adding input device VirtualPS/2 VMware VMMouse (/dev/input/event2)
+[    30.215] (**) VirtualPS/2 VMware VMMouse: Applying InputClass "evdev pointer catchall"
+[    30.215] (**) VirtualPS/2 VMware VMMouse: Applying InputClass "libinput pointer catchall"
+[    30.215] (II) Using input driver 'libinput' for 'VirtualPS/2 VMware VMMouse'
+[    30.215] (**) VirtualPS/2 VMware VMMouse: always reports core events
+[    30.215] (**) Option "Device" "/dev/input/event2"
+[    30.215] (**) Option "_source" "server/udev"
+[    30.215] (II) event2  - VirtualPS/2 VMware VMMouse: is tagged by udev as: Mouse
+[    30.216] (II) event2  - VirtualPS/2 VMware VMMouse: device is a pointer
+[    30.216] (II) event2  - VirtualPS/2 VMware VMMouse: device removed
+[    30.233] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input4/event2"
+[    30.233] (II) XINPUT: Adding extended input device "VirtualPS/2 VMware VMMouse" (type: MOUSE, id 9)
+[    30.233] (**) Option "AccelerationScheme" "none"
+[    30.233] (**) VirtualPS/2 VMware VMMouse: (accel) selected scheme none/0
+[    30.233] (**) VirtualPS/2 VMware VMMouse: (accel) acceleration factor: 2.000
+[    30.233] (**) VirtualPS/2 VMware VMMouse: (accel) acceleration threshold: 4
+[    30.233] (II) event2  - VirtualPS/2 VMware VMMouse: is tagged by udev as: Mouse
+[    30.234] (II) event2  - VirtualPS/2 VMware VMMouse: device is a pointer
+[    30.234] (II) config/udev: Adding input device VirtualPS/2 VMware VMMouse (/dev/input/mouse0)
+[    30.234] (II) No input driver specified, ignoring this device.
+[    30.234] (II) This device may have been added with another device file.
+[    30.235] (II) config/udev: Adding input device PC Speaker (/dev/input/event4)
+[    30.235] (II) No input driver specified, ignoring this device.
+[    30.235] (II) This device may have been added with another device file.
+[    30.725] (II) modeset(0): Disabling kernel dirty updates, not required.

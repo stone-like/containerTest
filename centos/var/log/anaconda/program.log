@@ -1,0 +1,595 @@
+17:12:49,874 INF program: Running... losetup --list
+17:12:49,888 INF program: Running... /sbin/auditd
+17:12:49,893 DBG program: Return code: 0
+17:12:49,895 INF program: Running... dbus-daemon --print-address --syslog --config-file=/usr/share/anaconda/dbus/anaconda-bus.conf
+17:12:51,368 INF program: Running... modprobe libfc
+17:12:51,409 DBG program: Return code: 0
+17:12:51,410 INF program: Running... /usr/libexec/fcoe/fcoe_edd.sh -i
+17:12:51,448 INF program: stdout:
+17:12:51,448 INF program: No FCoE boot disk information is found in EDD!
+17:12:51,449 DBG program: Return code: 1
+17:12:51,652 INF program: Running... loadkeys us
+17:12:51,720 DBG program: Return code: 0
+17:12:51,721 INF program: Running... loadkeys us
+17:12:51,789 DBG program: Return code: 0
+17:12:52,208 INF program: Running... losetup --list
+17:12:52,216 INF program: Running... Xorg -br -logfile /tmp/X.log :1 vt6 -s 1440 -ac -nolisten tcp -dpi 96 -noreset
+17:12:53,562 INF program: Running... metacity --display :1 --sm-disable
+17:12:53,574 INF program: Running... xrdb -nocpp -merge /etc/X11/Xresources
+17:12:53,586 INF program: xrdb: No such file or directory
+17:12:53,586 INF program: xrdb: can't open file '/etc/X11/Xresources'
+17:12:53,587 DBG program: Return code: 1
+17:12:53,587 INF program: Running... spice-vdagent
+17:12:53,613 DBG program: Return code: 1
+17:12:54,001 INF program: Running [2] e2fsck -V ...
+17:12:54,008 INF program: stdout[2]: 
+17:12:54,009 INF program: stderr[2]: e2fsck 1.44.3 (10-July-2018)
+	Using EXT2FS Library version 1.44.3, 10-July-2018
+
+17:12:54,009 INF program: ...done [2] (exit code: 0)
+17:12:54,751 INF program: Running... udevadm settle --timeout=300
+17:12:54,772 DBG program: Return code: 0
+17:12:54,777 INF program: Running... udevadm settle --timeout=300
+17:12:54,796 DBG program: Return code: 0
+17:12:54,818 INF program: Running... hwclock --hctosys --utc
+17:12:54,842 INF program: Running [3] mpathconf --find_multipaths y --user_friendly_names y --with_multipathd y ...
+17:12:54,885 INF program: stdout[3]: 
+17:12:54,886 INF program: stderr[3]: 
+17:12:54,886 INF program: ...done [3] (exit code: 0)
+17:12:54,917 INF program: Running... udevadm settle --timeout=300
+17:12:55,282 DBG program: Return code: 0
+17:12:55,515 INF program: Running... dumpe2fs -h /dev/loop1
+17:12:55,529 INF program: stdout:
+17:12:55,530 INF program: Filesystem volume name:   Anaconda
+17:12:55,530 INF program: Last mounted on:          /var/tmp/lorax/lorax.imgutils.6n_f9doo
+17:12:55,530 INF program: Filesystem UUID:          f32aa3db-37bd-42ad-be78-db555a97ac16
+17:12:55,530 INF program: Filesystem magic number:  0xEF53
+17:12:55,530 INF program: Filesystem revision #:    1 (dynamic)
+17:12:55,530 INF program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+17:12:55,531 INF program: Filesystem flags:         signed_directory_hash 
+17:12:55,531 INF program: Default mount options:    user_xattr acl
+17:12:55,531 INF program: Filesystem state:         clean
+17:12:55,531 INF program: Errors behavior:          Continue
+17:12:55,531 INF program: Filesystem OS type:       Linux
+17:12:55,531 INF program: Inode count:              196608
+17:12:55,532 INF program: Block count:              786432
+17:12:55,532 INF program: Reserved block count:     0
+17:12:55,532 INF program: Free blocks:              303642
+17:12:55,532 INF program: Free inodes:              159588
+17:12:55,532 INF program: First block:              0
+17:12:55,533 INF program: Block size:               4096
+17:12:55,533 INF program: Fragment size:            4096
+17:12:55,533 INF program: Group descriptor size:    64
+17:12:55,533 INF program: Reserved GDT blocks:      383
+17:12:55,533 INF program: Blocks per group:         32768
+17:12:55,533 INF program: Fragments per group:      32768
+17:12:55,533 INF program: Inodes per group:         8192
+17:12:55,534 INF program: Inode blocks per group:   512
+17:12:55,534 INF program: Flex block group size:    16
+17:12:55,534 INF program: Filesystem created:       Thu Aug 15 21:20:41 2019
+17:12:55,534 INF program: Last mount time:          Thu Aug 15 21:20:42 2019
+17:12:55,534 INF program: Last write time:          Thu Aug 15 21:20:53 2019
+17:12:55,534 INF program: Mount count:              1
+17:12:55,534 INF program: Maximum mount count:      -1
+17:12:55,535 INF program: Last checked:             Thu Aug 15 21:20:41 2019
+17:12:55,535 INF program: Check interval:           0 (<none>)
+17:12:55,535 INF program: Lifetime writes:          1925 MB
+17:12:55,535 INF program: Reserved blocks uid:      0 (user root)
+17:12:55,535 INF program: Reserved blocks gid:      0 (group root)
+17:12:55,535 INF program: First inode:              11
+17:12:55,536 INF program: Inode size:	          256
+17:12:55,536 INF program: Required extra isize:     32
+17:12:55,536 INF program: Desired extra isize:      32
+17:12:55,536 INF program: Journal inode:            8
+17:12:55,536 INF program: Default directory hash:   half_md4
+17:12:55,536 INF program: Directory Hash Seed:      14951343-7e82-41fd-8194-dfc0ae4c2dc9
+17:12:55,537 INF program: Journal backup:           inode blocks
+17:12:55,537 INF program: Checksum type:            crc32c
+17:12:55,537 INF program: Checksum:                 0x1305e2ac
+17:12:55,537 INF program: Journal features:         journal_64bit journal_checksum_v3
+17:12:55,537 INF program: Journal size:             64M
+17:12:55,537 INF program: Journal length:           16384
+17:12:55,537 INF program: Journal sequence:         0x00000007
+17:12:55,538 INF program: Journal start:            0
+17:12:55,538 INF program: Journal checksum type:    crc32c
+17:12:55,538 INF program: Journal checksum:         0xd5f2c415
+17:12:55,538 INF program: 
+17:12:55,538 INF program: stderr:
+17:12:55,538 INF program: b'dumpe2fs 1.44.3 (10-July-2018)'
+17:12:55,539 DBG program: Return code: 0
+17:12:55,540 INF program: Running... resize2fs -P /dev/loop1
+17:12:55,558 INF program: stdout:
+17:12:55,558 INF program: Couldn't find valid filesystem superblock.
+17:12:55,559 INF program: stderr:
+17:12:55,559 INF program: b'resize2fs 1.44.3 (10-July-2018)'
+17:12:55,559 INF program: b'resize2fs: Device or resource busy while trying to open /dev/loop1'
+17:12:55,559 DBG program: Return code: 1
+17:12:55,567 INF program: Running... udevadm settle --timeout=300
+17:12:55,589 DBG program: Return code: 0
+17:12:55,593 INF program: Running... udevadm settle --timeout=300
+17:12:55,612 DBG program: Return code: 0
+17:12:55,620 INF program: Running... udevadm settle --timeout=300
+17:12:55,639 DBG program: Return code: 0
+17:12:55,683 INF program: Running [4] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,000 DBG program: Return code: 0
+17:12:56,001 INF program: stdout[4]: 
+
+17:12:56,002 INF program: stderr[4]: 
+17:12:56,002 INF program: ...done [4] (exit code: 0)
+17:12:56,002 INF program: Running [5] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,010 INF program: stdout[5]: 
+
+17:12:56,010 INF program: stderr[5]: 
+17:12:56,010 INF program: ...done [5] (exit code: 0)
+17:12:56,011 INF program: Running [6] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,017 INF program: stdout[6]: 
+
+17:12:56,017 INF program: stderr[6]: 
+17:12:56,018 INF program: ...done [6] (exit code: 0)
+17:12:56,018 INF program: Running [7] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,024 INF program: stdout[7]: 
+
+17:12:56,025 INF program: stderr[7]: 
+17:12:56,025 INF program: ...done [7] (exit code: 0)
+17:12:56,025 INF program: Running [8] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,033 INF program: stdout[8]: 
+
+17:12:56,033 INF program: stderr[8]: 
+17:12:56,033 INF program: ...done [8] (exit code: 0)
+17:12:56,033 INF program: Running [9] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,039 INF program: stdout[9]: 
+
+17:12:56,040 INF program: stderr[9]: 
+17:12:56,040 INF program: ...done [9] (exit code: 0)
+17:12:56,040 INF program: Running [10] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,045 INF program: stdout[10]: 
+
+17:12:56,046 INF program: stderr[10]: 
+17:12:56,046 INF program: ...done [10] (exit code: 0)
+17:12:56,046 INF program: Running [11] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,051 INF program: stdout[11]: 
+
+17:12:56,052 INF program: stderr[11]: 
+17:12:56,052 INF program: ...done [11] (exit code: 0)
+17:12:56,052 INF program: Running [12] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,057 INF program: stdout[12]: 
+
+17:12:56,058 INF program: stderr[12]: 
+17:12:56,058 INF program: ...done [12] (exit code: 0)
+17:12:56,084 INF program: Running [13] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,097 INF program: stdout[13]: 
+
+17:12:56,098 INF program: stderr[13]: 
+17:12:56,098 INF program: ...done [13] (exit code: 0)
+17:12:56,099 INF program: Running [14] dmsetup info -co subsystem --noheadings live-rw ...
+17:12:56,105 INF program: stdout[14]: 
+
+17:12:56,105 INF program: stderr[14]: 
+17:12:56,105 INF program: ...done [14] (exit code: 0)
+17:12:56,118 INF program: Running... dumpe2fs -h /dev/mapper/live-rw
+17:12:56,129 INF program: stdout:
+17:12:56,129 INF program: Filesystem volume name:   Anaconda
+17:12:56,130 INF program: Last mounted on:          /sysroot
+17:12:56,130 INF program: Filesystem UUID:          f32aa3db-37bd-42ad-be78-db555a97ac16
+17:12:56,130 INF program: Filesystem magic number:  0xEF53
+17:12:56,130 INF program: Filesystem revision #:    1 (dynamic)
+17:12:56,131 INF program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype needs_recovery extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+17:12:56,131 INF program: Filesystem flags:         signed_directory_hash 
+17:12:56,131 INF program: Default mount options:    user_xattr acl
+17:12:56,131 INF program: Filesystem state:         clean
+17:12:56,132 INF program: Errors behavior:          Continue
+17:12:56,132 INF program: Filesystem OS type:       Linux
+17:12:56,132 INF program: Inode count:              196608
+17:12:56,132 INF program: Block count:              786432
+17:12:56,132 INF program: Reserved block count:     0
+17:12:56,133 INF program: Free blocks:              303642
+17:12:56,133 INF program: Free inodes:              159588
+17:12:56,133 INF program: First block:              0
+17:12:56,133 INF program: Block size:               4096
+17:12:56,134 INF program: Fragment size:            4096
+17:12:56,134 INF program: Group descriptor size:    64
+17:12:56,134 INF program: Reserved GDT blocks:      383
+17:12:56,134 INF program: Blocks per group:         32768
+17:12:56,134 INF program: Fragments per group:      32768
+17:12:56,135 INF program: Inodes per group:         8192
+17:12:56,135 INF program: Inode blocks per group:   512
+17:12:56,135 INF program: Flex block group size:    16
+17:12:56,135 INF program: Filesystem created:       Thu Aug 15 21:20:41 2019
+17:12:56,136 INF program: Last mount time:          Fri Sep 27 17:12:39 2019
+17:12:56,136 INF program: Last write time:          Fri Sep 27 17:12:39 2019
+17:12:56,136 INF program: Mount count:              2
+17:12:56,136 INF program: Maximum mount count:      -1
+17:12:56,137 INF program: Last checked:             Thu Aug 15 21:20:41 2019
+17:12:56,137 INF program: Check interval:           0 (<none>)
+17:12:56,137 INF program: Lifetime writes:          1925 MB
+17:12:56,137 INF program: Reserved blocks uid:      0 (user root)
+17:12:56,138 INF program: Reserved blocks gid:      0 (group root)
+17:12:56,138 INF program: First inode:              11
+17:12:56,138 INF program: Inode size:	          256
+17:12:56,138 INF program: Required extra isize:     32
+17:12:56,138 INF program: Desired extra isize:      32
+17:12:56,139 INF program: Journal inode:            8
+17:12:56,139 INF program: Default directory hash:   half_md4
+17:12:56,139 INF program: Directory Hash Seed:      14951343-7e82-41fd-8194-dfc0ae4c2dc9
+17:12:56,139 INF program: Journal backup:           inode blocks
+17:12:56,140 INF program: Checksum type:            crc32c
+17:12:56,140 INF program: Checksum:                 0xcdcc563b
+17:12:56,140 INF program: Journal features:         journal_64bit journal_checksum_v3
+17:12:56,140 INF program: Journal size:             64M
+17:12:56,141 INF program: Journal length:           16384
+17:12:56,141 INF program: Journal sequence:         0x00000008
+17:12:56,141 INF program: Journal start:            1
+17:12:56,141 INF program: Journal checksum type:    crc32c
+17:12:56,141 INF program: Journal checksum:         0xd1d9ddeb
+17:12:56,142 INF program: 
+17:12:56,142 INF program: stderr:
+17:12:56,142 INF program: b'dumpe2fs 1.44.3 (10-July-2018)'
+17:12:56,142 DBG program: Return code: 0
+17:12:56,143 INF program: Running... resize2fs -P /dev/mapper/live-rw
+17:12:56,152 INF program: stdout:
+17:12:56,152 INF program: Estimated minimum size of the filesystem: 777333
+17:12:56,153 INF program: stderr:
+17:12:56,153 INF program: b'resize2fs 1.44.3 (10-July-2018)'
+17:12:56,153 DBG program: Return code: 0
+17:12:56,162 INF program: Running... udevadm settle --timeout=300
+17:12:56,190 DBG program: Return code: 0
+17:12:56,199 INF program: Running... udevadm settle --timeout=300
+17:12:56,225 DBG program: Return code: 0
+17:12:56,246 INF program: Running [15] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,252 INF program: stdout[15]: 
+
+17:12:56,252 INF program: stderr[15]: 
+17:12:56,252 INF program: ...done [15] (exit code: 0)
+17:12:56,253 INF program: Running [16] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,259 INF program: stdout[16]: 
+
+17:12:56,260 INF program: stderr[16]: 
+17:12:56,260 INF program: ...done [16] (exit code: 0)
+17:12:56,260 INF program: Running [17] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,269 INF program: stdout[17]: 
+
+17:12:56,270 INF program: stderr[17]: 
+17:12:56,270 INF program: ...done [17] (exit code: 0)
+17:12:56,270 INF program: Running [18] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,276 INF program: stdout[18]: 
+
+17:12:56,276 INF program: stderr[18]: 
+17:12:56,277 INF program: ...done [18] (exit code: 0)
+17:12:56,277 INF program: Running [19] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,283 INF program: stdout[19]: 
+
+17:12:56,283 INF program: stderr[19]: 
+17:12:56,284 INF program: ...done [19] (exit code: 0)
+17:12:56,284 INF program: Running [20] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,289 INF program: stdout[20]: 
+
+17:12:56,290 INF program: stderr[20]: 
+17:12:56,290 INF program: ...done [20] (exit code: 0)
+17:12:56,291 INF program: Running [21] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,296 INF program: stdout[21]: 
+
+17:12:56,297 INF program: stderr[21]: 
+17:12:56,297 INF program: ...done [21] (exit code: 0)
+17:12:56,297 INF program: Running [22] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,304 INF program: stdout[22]: 
+
+17:12:56,304 INF program: stderr[22]: 
+17:12:56,305 INF program: ...done [22] (exit code: 0)
+17:12:56,305 INF program: Running [23] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,310 INF program: stdout[23]: 
+
+17:12:56,311 INF program: stderr[23]: 
+17:12:56,311 INF program: ...done [23] (exit code: 0)
+17:12:56,343 INF program: Running [24] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,350 INF program: stdout[24]: 
+
+17:12:56,351 INF program: stderr[24]: 
+17:12:56,351 INF program: ...done [24] (exit code: 0)
+17:12:56,351 INF program: Running [25] dmsetup info -co subsystem --noheadings live-base ...
+17:12:56,358 INF program: stdout[25]: 
+
+17:12:56,358 INF program: stderr[25]: 
+17:12:56,359 INF program: ...done [25] (exit code: 0)
+17:12:56,374 INF program: Running... dumpe2fs -h /dev/mapper/live-base
+17:12:56,383 INF program: stdout:
+17:12:56,384 INF program: Filesystem volume name:   Anaconda
+17:12:56,384 INF program: Last mounted on:          /var/tmp/lorax/lorax.imgutils.6n_f9doo
+17:12:56,384 INF program: Filesystem UUID:          f32aa3db-37bd-42ad-be78-db555a97ac16
+17:12:56,384 INF program: Filesystem magic number:  0xEF53
+17:12:56,385 INF program: Filesystem revision #:    1 (dynamic)
+17:12:56,385 INF program: Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+17:12:56,385 INF program: Filesystem flags:         signed_directory_hash 
+17:12:56,385 INF program: Default mount options:    user_xattr acl
+17:12:56,385 INF program: Filesystem state:         clean
+17:12:56,386 INF program: Errors behavior:          Continue
+17:12:56,386 INF program: Filesystem OS type:       Linux
+17:12:56,386 INF program: Inode count:              196608
+17:12:56,386 INF program: Block count:              786432
+17:12:56,386 INF program: Reserved block count:     0
+17:12:56,386 INF program: Free blocks:              303642
+17:12:56,386 INF program: Free inodes:              159588
+17:12:56,386 INF program: First block:              0
+17:12:56,387 INF program: Block size:               4096
+17:12:56,387 INF program: Fragment size:            4096
+17:12:56,387 INF program: Group descriptor size:    64
+17:12:56,387 INF program: Reserved GDT blocks:      383
+17:12:56,387 INF program: Blocks per group:         32768
+17:12:56,387 INF program: Fragments per group:      32768
+17:12:56,387 INF program: Inodes per group:         8192
+17:12:56,388 INF program: Inode blocks per group:   512
+17:12:56,388 INF program: Flex block group size:    16
+17:12:56,388 INF program: Filesystem created:       Thu Aug 15 21:20:41 2019
+17:12:56,388 INF program: Last mount time:          Thu Aug 15 21:20:42 2019
+17:12:56,388 INF program: Last write time:          Thu Aug 15 21:20:53 2019
+17:12:56,388 INF program: Mount count:              1
+17:12:56,388 INF program: Maximum mount count:      -1
+17:12:56,389 INF program: Last checked:             Thu Aug 15 21:20:41 2019
+17:12:56,389 INF program: Check interval:           0 (<none>)
+17:12:56,389 INF program: Lifetime writes:          1925 MB
+17:12:56,389 INF program: Reserved blocks uid:      0 (user root)
+17:12:56,389 INF program: Reserved blocks gid:      0 (group root)
+17:12:56,390 INF program: First inode:              11
+17:12:56,390 INF program: Inode size:	          256
+17:12:56,390 INF program: Required extra isize:     32
+17:12:56,390 INF program: Desired extra isize:      32
+17:12:56,390 INF program: Journal inode:            8
+17:12:56,390 INF program: Default directory hash:   half_md4
+17:12:56,391 INF program: Directory Hash Seed:      14951343-7e82-41fd-8194-dfc0ae4c2dc9
+17:12:56,391 INF program: Journal backup:           inode blocks
+17:12:56,391 INF program: Checksum type:            crc32c
+17:12:56,391 INF program: Checksum:                 0x1305e2ac
+17:12:56,391 INF program: Journal features:         journal_64bit journal_checksum_v3
+17:12:56,391 INF program: Journal size:             64M
+17:12:56,391 INF program: Journal length:           16384
+17:12:56,392 INF program: Journal sequence:         0x00000007
+17:12:56,392 INF program: Journal start:            0
+17:12:56,392 INF program: Journal checksum type:    crc32c
+17:12:56,392 INF program: Journal checksum:         0xd5f2c415
+17:12:56,392 INF program: 
+17:12:56,392 INF program: stderr:
+17:12:56,392 INF program: b'dumpe2fs 1.44.3 (10-July-2018)'
+17:12:56,393 DBG program: Return code: 0
+17:12:56,394 INF program: Running... resize2fs -P /dev/mapper/live-base
+17:12:56,402 INF program: stdout:
+17:12:56,403 INF program: Couldn't find valid filesystem superblock.
+17:12:56,403 INF program: stderr:
+17:12:56,403 INF program: b'resize2fs 1.44.3 (10-July-2018)'
+17:12:56,403 INF program: b'resize2fs: Operation not permitted while trying to open /dev/mapper/live-base'
+17:12:56,404 DBG program: Return code: 1
+17:12:56,410 INF program: Running... udevadm settle --timeout=300
+17:12:56,435 DBG program: Return code: 0
+17:12:56,451 INF program: Running... udevadm settle --timeout=300
+17:12:56,468 DBG program: Return code: 0
+17:12:56,478 INF program: Running... udevadm settle --timeout=300
+17:12:56,495 DBG program: Return code: 0
+17:12:56,507 INF program: Running... udevadm settle --timeout=300
+17:12:56,523 DBG program: Return code: 0
+17:12:56,539 INF program: Running... udevadm settle --timeout=300
+17:12:56,555 DBG program: Return code: 0
+17:12:59,864 INF program: Running... modprobe vfat
+17:12:59,893 DBG program: Return code: 0
+17:13:00,418 INF program: Running... modprobe xfs
+17:13:00,593 DBG program: Return code: 0
+17:13:00,757 INF program: Running [26] mdadm --version ...
+17:13:00,789 INF program: stdout[26]: 
+17:13:00,789 INF program: stderr[26]: mdadm - v4.1 - 2018-10-01
+
+17:13:00,789 INF program: ...done [26] (exit code: 0)
+17:13:00,795 INF program: Running [27] mkswap --version ...
+17:13:00,802 INF program: stdout[27]: mkswap from util-linux 2.32.1
+
+17:13:00,803 INF program: stderr[27]: 
+17:13:00,803 INF program: ...done [27] (exit code: 0)
+17:13:01,335 INF program: Running... df --output=target,avail
+17:13:01,359 INF program: Mounted on       Avail
+17:13:01,359 INF program: /dev           1985720
+17:13:01,359 INF program: /dev/shm       2017576
+17:13:01,360 INF program: /run           1965860
+17:13:01,360 INF program: /sys/fs/cgroup 2017580
+17:13:01,360 INF program: /              1184884
+17:13:01,360 INF program: /tmp           1990632
+17:13:01,360 DBG program: Return code: 0
+17:13:01,371 INF program: Running... df --output=target,avail
+17:13:01,380 INF program: Mounted on       Avail
+17:13:01,381 INF program: /dev           1985720
+17:13:01,381 INF program: /dev/shm       2017576
+17:13:01,381 INF program: /run           1965860
+17:13:01,381 INF program: /sys/fs/cgroup 2017580
+17:13:01,381 INF program: /              1184884
+17:13:01,382 INF program: /tmp           1990632
+17:13:01,382 DBG program: Return code: 0
+17:13:01,392 INF program: Running... df --output=target,avail
+17:13:01,401 INF program: Mounted on       Avail
+17:13:01,401 INF program: /dev           1985720
+17:13:01,401 INF program: /dev/shm       2017576
+17:13:01,402 INF program: /run           1965860
+17:13:01,402 INF program: /sys/fs/cgroup 2017580
+17:13:01,402 INF program: /              1184884
+17:13:01,402 INF program: /tmp           1990632
+17:13:01,402 DBG program: Return code: 0
+17:13:03,065 INF program: Running... df --output=target,avail
+17:13:03,073 INF program: Mounted on       Avail
+17:13:03,074 INF program: /dev           1985720
+17:13:03,074 INF program: /dev/shm       2017576
+17:13:03,074 INF program: /run           1965864
+17:13:03,074 INF program: /sys/fs/cgroup 2017580
+17:13:03,074 INF program: /              1184884
+17:13:03,074 INF program: /tmp           1990624
+17:13:03,075 DBG program: Return code: 0
+17:13:03,808 INF program: Running... hwclock --systohc --utc
+17:13:04,504 DBG program: Return code: 0
+17:13:04,538 INF program: Running... udevadm settle --timeout=300
+17:13:04,562 DBG program: Return code: 0
+17:13:04,566 INF program: Running... udevadm settle --timeout=300
+17:13:04,588 DBG program: Return code: 0
+17:13:04,602 INF program: Running... wipefs -f -a /dev/vda
+17:13:04,620 DBG program: Return code: 0
+17:13:04,621 INF program: Running... udevadm settle --timeout=300
+17:13:04,644 DBG program: Return code: 0
+17:13:04,666 INF program: Running... udevadm settle --timeout=300
+17:13:04,689 DBG program: Return code: 0
+17:13:04,690 INF program: Running... udevadm settle --timeout=300
+17:13:04,712 DBG program: Return code: 0
+17:13:04,724 INF program: Running... dd if=/dev/zero of=/dev/vda bs=512 seek=2048 count=2048
+17:13:04,759 INF program: stderr:
+17:13:04,759 INF program: b'2048+0 records in'
+17:13:04,760 INF program: b'2048+0 records out'
+17:13:04,760 INF program: b'1048576 bytes (1.0 MB, 1.0 MiB) copied, 0.0234448 s, 44.7 MB/s'
+17:13:04,760 DBG program: Return code: 0
+17:13:04,761 INF program: Running... udevadm settle --timeout=300
+17:13:04,783 DBG program: Return code: 0
+17:13:04,794 INF program: Running... udevadm settle --timeout=300
+17:13:04,818 DBG program: Return code: 0
+17:13:04,824 INF program: Running... wipefs -f -a /dev/vda1
+17:13:04,836 DBG program: Return code: 0
+17:13:04,842 INF program: Running... udevadm settle --timeout=300
+17:13:04,861 DBG program: Return code: 0
+17:13:04,898 INF program: Running... udevadm settle --timeout=300
+17:13:04,921 DBG program: Return code: 0
+17:13:04,926 INF program: Running... mke2fs -t ext4 /dev/vda1
+17:13:05,287 INF program: stdout:
+17:13:05,288 INF program: Creating filesystem with 2621184 4k blocks and 655360 inodes
+17:13:05,288 INF program: Filesystem UUID: 3f8fe251-d9a6-4626-ad29-ad8f14bc4bab
+17:13:05,288 INF program: Superblock backups stored on blocks: 
+17:13:05,289 INF program: 	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632
+17:13:05,289 INF program: 
+17:13:05,289 INF program: Allocating group tables:  0/80     done                            
+17:13:05,289 INF program: Writing inode tables:  0/80     done                            
+17:13:05,290 INF program: Creating journal (16384 blocks): done
+17:13:05,290 INF program: Writing superblocks and filesystem accounting information:  0/80     done
+17:13:05,290 INF program: 
+17:13:05,290 INF program: stderr:
+17:13:05,290 INF program: b'mke2fs 1.44.3 (10-July-2018)'
+17:13:05,291 DBG program: Return code: 0
+17:13:05,291 INF program: Running... udevadm settle --timeout=300
+17:13:05,316 DBG program: Return code: 0
+17:13:05,384 INF program: Running... udevadm settle --timeout=300
+17:13:05,408 DBG program: Return code: 0
+17:13:05,414 INF program: Running... udevadm settle --timeout=300
+17:13:05,437 DBG program: Return code: 0
+17:13:05,441 INF program: Running... mount -t ext4 -o defaults /dev/vda1 /mnt/sysimage
+17:13:05,455 DBG program: Return code: 0
+17:13:05,463 INF program: Running... udevadm settle --timeout=300
+17:13:05,487 DBG program: Return code: 0
+17:13:05,491 INF program: Running... udevadm settle --timeout=300
+17:13:05,512 DBG program: Return code: 0
+17:13:05,516 INF program: Running... udevadm settle --timeout=300
+17:13:05,538 DBG program: Return code: 0
+17:13:05,545 INF program: Running... udevadm settle --timeout=300
+17:13:05,568 DBG program: Return code: 0
+17:13:05,574 INF program: Running... udevadm settle --timeout=300
+17:13:05,595 DBG program: Return code: 0
+17:13:05,599 INF program: Running... mount -t bind -o bind,defaults /dev /mnt/sysimage/dev
+17:13:05,609 DBG program: Return code: 0
+17:13:05,612 INF program: Running... udevadm settle --timeout=300
+17:13:05,633 DBG program: Return code: 0
+17:13:05,637 INF program: Running... udevadm settle --timeout=300
+17:13:05,658 DBG program: Return code: 0
+17:13:05,662 INF program: Running... udevadm settle --timeout=300
+17:13:05,684 DBG program: Return code: 0
+17:13:05,689 INF program: Running... udevadm settle --timeout=300
+17:13:05,708 DBG program: Return code: 0
+17:13:05,712 INF program: Running... mount -t devpts -o gid=5,mode=620 devpts /mnt/sysimage/dev/pts
+17:13:05,721 DBG program: Return code: 0
+17:13:05,725 INF program: Running... udevadm settle --timeout=300
+17:13:05,746 DBG program: Return code: 0
+17:13:05,750 INF program: Running... udevadm settle --timeout=300
+17:13:05,771 DBG program: Return code: 0
+17:13:05,776 INF program: Running... mount -t tmpfs -o defaults tmpfs /mnt/sysimage/dev/shm
+17:13:05,786 DBG program: Return code: 0
+17:13:05,789 INF program: Running... udevadm settle --timeout=300
+17:13:05,810 DBG program: Return code: 0
+17:13:05,814 INF program: Running... udevadm settle --timeout=300
+17:13:05,835 DBG program: Return code: 0
+17:13:05,839 INF program: Running... udevadm settle --timeout=300
+17:13:05,860 DBG program: Return code: 0
+17:13:05,865 INF program: Running... udevadm settle --timeout=300
+17:13:05,886 DBG program: Return code: 0
+17:13:05,890 INF program: Running... mount -t proc -o defaults proc /mnt/sysimage/proc
+17:13:05,899 DBG program: Return code: 0
+17:13:05,949 INF program: Running... udevadm settle --timeout=300
+17:13:05,971 DBG program: Return code: 0
+17:13:05,975 INF program: Running... udevadm settle --timeout=300
+17:13:05,996 DBG program: Return code: 0
+17:13:06,000 INF program: Running... udevadm settle --timeout=300
+17:13:06,021 DBG program: Return code: 0
+17:13:06,025 INF program: Running... udevadm settle --timeout=300
+17:13:06,045 DBG program: Return code: 0
+17:13:06,051 INF program: Running... udevadm settle --timeout=300
+17:13:06,087 DBG program: Return code: 0
+17:13:06,091 INF program: Running... mount -t bind -o bind,defaults /run /mnt/sysimage/run
+17:13:06,102 DBG program: Return code: 0
+17:13:06,106 INF program: Running... udevadm settle --timeout=300
+17:13:06,125 DBG program: Return code: 0
+17:13:06,130 INF program: Running... udevadm settle --timeout=300
+17:13:06,149 DBG program: Return code: 0
+17:13:06,153 INF program: Running... udevadm settle --timeout=300
+17:13:06,171 DBG program: Return code: 0
+17:13:06,177 INF program: Running... udevadm settle --timeout=300
+17:13:06,194 DBG program: Return code: 0
+17:13:06,199 INF program: Running... mount -t sysfs -o defaults sysfs /mnt/sysimage/sys
+17:13:06,208 DBG program: Return code: 0
+17:13:06,211 INF program: Running... udevadm settle --timeout=300
+17:13:06,229 DBG program: Return code: 0
+17:13:06,233 INF program: Running... udevadm settle --timeout=300
+17:13:06,252 DBG program: Return code: 0
+17:13:06,256 INF program: Running... udevadm settle --timeout=300
+17:13:06,273 DBG program: Return code: 0
+17:13:06,279 INF program: Running... udevadm settle --timeout=300
+17:13:06,296 DBG program: Return code: 0
+17:13:06,301 INF program: Running... mount -t selinuxfs -o defaults selinuxfs /mnt/sysimage/sys/fs/selinux
+17:13:06,310 DBG program: Return code: 0
+17:13:06,353 INF program: Running... systemctl status chronyd
+17:13:06,369 INF program: * chronyd.service - NTP client/server
+17:13:06,370 INF program: Loaded: loaded (/usr/lib/systemd/system/chronyd.service; enabled; vendor preset: enabled)
+17:13:06,370 INF program: Active: inactive (dead)
+17:13:06,370 INF program: Docs: man:chronyd(8)
+17:13:06,371 INF program: man:chrony.conf(5)
+17:13:06,371 DBG program: Return code: 3
+17:13:06,391 INF program: Running... systemd-detect-virt
+17:13:06,403 INF program: kvm
+17:13:06,403 DBG program: Return code: 0
+17:13:06,971 INF program: Running... df --output=target,avail
+17:13:06,980 INF program: Mounted on              Avail
+17:13:06,980 INF program: /dev                  1985720
+17:13:06,980 INF program: /dev/shm              2017576
+17:13:06,981 INF program: /run                  1965860
+17:13:06,981 INF program: /sys/fs/cgroup        2017580
+17:13:06,981 INF program: /                     1184844
+17:13:06,981 INF program: /tmp                  1990584
+17:13:06,981 INF program: /mnt/sysimage         9676912
+17:13:06,981 INF program: /mnt/sysimage/dev/shm 2017580
+17:13:06,982 DBG program: Return code: 0
+17:13:07,018 INF program: Running... df --output=target,avail
+17:13:07,024 INF program: Mounted on              Avail
+17:13:07,025 INF program: /dev                  1985720
+17:13:07,025 INF program: /dev/shm              2017576
+17:13:07,025 INF program: /run                  1965860
+17:13:07,025 INF program: /sys/fs/cgroup        2017580
+17:13:07,025 INF program: /                     1184844
+17:13:07,026 INF program: /tmp                  1990584
+17:13:07,026 INF program: /mnt/sysimage         9676912
+17:13:07,026 INF program: /mnt/sysimage/dev/shm 2017580
+17:13:07,026 DBG program: Return code: 0
+17:13:26,495 INF program: Running... systemctl disable initial-setup.service --root /mnt/sysimage
+17:13:26,510 INF program: Failed to disable unit, unit initial-setup.service does not exist.
+17:13:26,510 DBG program: Return code: 0
+17:13:26,515 INF program: Running... systemctl disable chronyd --root /mnt/sysimage
+17:13:26,525 INF program: Failed to disable unit, unit chronyd.service does not exist.
+17:13:26,526 DBG program: Return code: 0
+17:13:26,722 INF program: Running... chpasswd -R /mnt/sysimage -e
+17:13:26,744 INF program: Running... chage -R /mnt/sysimage -d  root
+17:13:26,762 DBG program: Return code: 0
+17:13:26,766 INF program: Running in chroot '/mnt/sysimage'... systemctl enable kdump.service
+17:13:26,778 DBG program: Return code: 0
+17:13:26,784 INF program: Running in chroot '/mnt/sysimage'... /bin/sh /tmp/ks-script-w6m6m_20
+17:13:26,828 INF program: Created symlink /etc/systemd/system/systemd-logind.service -> /dev/null.
+17:13:26,829 INF program: Created symlink /etc/systemd/system/getty.target -> /dev/null.
+17:13:26,829 INF program: Created symlink /etc/systemd/system/console-getty.service -> /dev/null.
+17:13:26,829 INF program: Created symlink /etc/systemd/system/sys-fs-fuse-connections.mount -> /dev/null.
+17:13:26,829 INF program: Created symlink /etc/systemd/system/systemd-remount-fs.service -> /dev/null.
+17:13:26,829 INF program: Created symlink /etc/systemd/system/dev-hugepages.mount -> /dev/null.
+17:13:26,830 DBG program: Return code: 0
+17:13:26,830 INF program: Running... /bin/sh /tmp/ks-script-2r10d0o7
+17:13:26,837 DBG program: Return code: 0
+17:13:26,838 INF program: Running... /bin/sh /tmp/ks-script-lohqm5ax

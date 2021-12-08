@@ -1,0 +1,11 @@
+
+# pip bash completion start
+_pip3_completion()
+{
+    COMPREPLY=( $( COMP_WORDS="${COMP_WORDS[*]}" \
+                   COMP_CWORD=$COMP_CWORD \
+                   PIP_AUTO_COMPLETE=1 $1 ) )
+}
+complete -o default -F _pip3_completion pip3 pip3.6
+# pip bash completion end
+

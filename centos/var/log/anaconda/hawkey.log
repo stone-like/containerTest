@@ -1,0 +1,52 @@
+INFO Sep-27 17:12:56 === Started libdnf-0.22.4 ===
+DEBUG Sep-27 17:12:56 fetching anaconda
+DEBUG Sep-27 17:12:57 caching repo: anaconda (0xaa956f1f0a2cbcef61813e942bdceca928956abebb9084c3668a79db3cdedb31)
+DEBUG Sep-27 17:12:57 load_ext: loading: /tmp/dnf.cache/anaconda-fd5dcac70e301a61/repodata/cb79e0ed455d053a0dc979e1ade7988405b444e1c233f23102d2fd79a64928ea-filelists.xml.gz
+DEBUG Sep-27 17:12:57 write_ext: storing anaconda to: /tmp/dnf.cache/anaconda-filenames.solvx.WvYerw
+DEBUG Sep-27 17:12:57 no presto metadata available for anaconda
+DEBUG Sep-27 17:12:57 no updateinfo available for anaconda
+DEBUG Sep-27 17:12:57 fetching koji-override-0
+DEBUG Sep-27 17:12:58 gdk_pixbuf_from_pixdata() called on:
+DEBUG Sep-27 17:12:58 	Encoding raw
+DEBUG Sep-27 17:12:58 	Dimensions: 9 x 15
+DEBUG Sep-27 17:12:58 	Rowstride: 36, Length: 564
+DEBUG Sep-27 17:12:58 	Copy pixels == false
+DEBUG Sep-27 17:12:58 gdk_pixbuf_from_pixdata() called on:
+DEBUG Sep-27 17:12:58 	Encoding raw
+DEBUG Sep-27 17:12:58 	Dimensions: 9 x 15
+DEBUG Sep-27 17:12:58 	Rowstride: 36, Length: 564
+DEBUG Sep-27 17:12:58 	Copy pixels == false
+DEBUG Sep-27 17:12:58 caching repo: koji-override-0 (0xaa956f1f0a2cbcef61813e942bdceca928956abebb9084c3668a79db3cdedb31)
+DEBUG Sep-27 17:12:58 load_ext: loading: /tmp/dnf.cache/koji-override-0-5a653a1f399b457e/repodata/cb79e0ed455d053a0dc979e1ade7988405b444e1c233f23102d2fd79a64928ea-filelists.xml.gz
+DEBUG Sep-27 17:12:58 write_ext: storing koji-override-0 to: /tmp/dnf.cache/koji-override-0-filenames.solvx.obV3ni
+DEBUG Sep-27 17:12:58 no presto metadata available for koji-override-0
+DEBUG Sep-27 17:12:58 no updateinfo available for koji-override-0
+DEBUG Sep-27 17:12:58 fetching AppStream
+DEBUG Sep-27 17:12:58 caching repo: AppStream (0xc384f603dc87c28d723f1f99123f6786a20b88fabab0dec954579b71dec3f047)
+DEBUG Sep-27 17:12:59 load_ext: loading: /tmp/dnf.cache/AppStream-7770ff48eefb0bfd/repodata/c77c54a0dd80b7be230227650477613d0b4aee51eef8ff7f11cfaa12230fef8f-filelists.xml.gz
+DEBUG Sep-27 17:12:59 write_ext: storing AppStream to: /tmp/dnf.cache/AppStream-filenames.solvx.OLQcBg
+DEBUG Sep-27 17:12:59 gdk_pixbuf_from_pixdata() called on:
+DEBUG Sep-27 17:12:59 	Encoding raw
+DEBUG Sep-27 17:12:59 	Dimensions: 14 x 14
+DEBUG Sep-27 17:12:59 	Rowstride: 56, Length: 808
+DEBUG Sep-27 17:12:59 	Copy pixels == false
+DEBUG Sep-27 17:12:59 gdk_pixbuf_from_pixdata() called on:
+DEBUG Sep-27 17:12:59 	Encoding raw
+DEBUG Sep-27 17:12:59 	Dimensions: 14 x 14
+DEBUG Sep-27 17:12:59 	Rowstride: 56, Length: 808
+DEBUG Sep-27 17:12:59 	Copy pixels == false
+DEBUG Sep-27 17:12:59 no presto metadata available for AppStream
+DEBUG Sep-27 17:12:59 no updateinfo available for AppStream
+DEBUG Sep-27 17:12:59 Architecture is: x86_64
+DEBUG Sep-27 17:13:00 running_kernel(): running kernel not matched to a package.
+DEBUG Sep-27 17:13:00 rewriting repo: anaconda
+DEBUG Sep-27 17:13:00 caching repo: anaconda (0xaa956f1f0a2cbcef61813e942bdceca928956abebb9084c3668a79db3cdedb31)
+DEBUG Sep-27 17:13:00 rewriting repo: koji-override-0
+DEBUG Sep-27 17:13:00 caching repo: koji-override-0 (0xaa956f1f0a2cbcef61813e942bdceca928956abebb9084c3668a79db3cdedb31)
+DEBUG Sep-27 17:13:00 rewriting repo: AppStream
+DEBUG Sep-27 17:13:00 caching repo: AppStream (0xc384f603dc87c28d723f1f99123f6786a20b88fabab0dec954579b71dec3f047)
+DEBUG Sep-27 17:13:06 running_kernel(): running kernel not matched to a package.
+DEBUG Sep-27 17:13:06 running_kernel(): running kernel not matched to a package.
+DEBUG Sep-27 17:13:26 Architecture is: x86_64
+INFO Sep-27 17:13:26 === Started libdnf-0.22.4 ===
+DEBUG Sep-27 17:13:26 fetching rpmdb
